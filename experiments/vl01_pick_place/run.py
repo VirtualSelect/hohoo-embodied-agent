@@ -93,6 +93,8 @@ def simulate(offset, output, render=False):
                 target = previous + (goal - previous) * blend
                 data.ctrl[:] = [target[0], target[1], target[2] - .16, target[3], target[3]]
                 mujoco.mj_step(model, data)
+                # Refresh derived positions/contacts to align with the post-step qpos snapshot.
+                mujoco.mj_forward(model, data)
                 if not np.isfinite(data.qpos).all() or not np.isfinite(data.qvel).all():
                     raise RuntimeError("non-finite simulation state")
                 cube = data.body("cube").xpos.copy()
