@@ -2,7 +2,7 @@
 
 以仿真优先（Simulation First）的方式，从 AI 应用开发逐步走向机器人软件、数据与具身智能。
 
-**当前状态：项目初始化与学习规划。尚无机器人控制代码、仿真实验、数据集或训练结果。**
+**当前状态：已实现首个 MuJoCo 教学实验。九次确定性抓取偏差对照已运行并保留轨迹、视频和失败记录；完整 Agent、ROS2 与训练路线尚未实现。**
 
 - [学习之旅](https://huhohoo.com/journey)
 - [虚拟具身实验室](https://huhohoo.com/journey/virtual-lab)
@@ -24,7 +24,7 @@ AI Application、LLM / Multimodal 与 Embodied AI 共同服务于这个项目，
 
 ## 仿真优先
 
-1. MuJoCo：规划机器人基础、控制、抓取与放置实验。
+1. MuJoCo：已有教学级笛卡尔夹爪抓取放置实验，后续扩展失败反馈与机器人模型。
 2. Gazebo + ROS2：规划系统软件与虚拟传感器实验。
 3. ManiSkill：规划策略学习与评估实验。
 4. Isaac Sim / Isaac Lab：未来阶段，尚未安装或集成。
@@ -45,14 +45,23 @@ AI Application、LLM / Multimodal 与 Embodied AI 共同服务于这个项目，
 - `policies/`：行为克隆、ACT、SmolVLA 的后续实验。
 - `experiments/`、`docs/`：可复现的实验记录和说明。
 
-不提前创建空目录，不强行统一所有模拟器接口。第一步从 M1 的结构化任务与验证开始。
+不提前创建空目录，不强行统一所有模拟器接口。M1 的结构化任务与验证仍按路线推进；独立的 VL01 首个物理案例已先行完成。
 
 ## 实践记录要求
 
 每次实验记录问题、假设、环境、步骤、观察、结果、局限、失败与复现方法。观察不等于结论，计划不等于完成。
 
-真实数据、模型权重、API Key 和凭证不提交到仓库。结果与指标必须附可追溯证据。
+不提交私密真实数据、模型权重、API Key 或凭证。公开教学仿真产物存放 evidence/，结果附可追溯版本与协议。
 
 ## Getting started
 
-This repository currently contains planning documents only. There is no runnable robot demo or simulator integration yet. Implementation will follow the milestones in [ROADMAP.md](ROADMAP.md), starting with validated structured robot tasks and fake tools.
+A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01_pick_place](experiments/vl01_pick_place/README.md), with nine recorded rollouts in [evidence/vl01-20260928-v2](evidence/vl01-20260928-v2). It uses real simulated contact, not object teleportation. There is no physical robot, ROS2 bridge, learned policy or model API in this experiment.
+
+## 首个可复现实验
+
+- [场景、坐标、命令与结果说明](experiments/vl01_pick_place/README.md)
+- [冻结协议](experiments/vl01_pick_place/protocol.json)
+- [原始结果与产物](evidence/vl01-20260928-v2)
+- [配套文章（博客分支待发布）](https://huhohoo.com/docs/embodied-ai/mujoco-first-pick-place)
+
+2026-09-28，由 Codex 在作者授权下执行。无偏移组三次满足协议；25 / 50 mm 偏移组未抬起方块。重复没有随机化，不作为泛化成功率；不会因此把整个 M4/M5 标为完成。作者个人学习与人工复核另行进行。

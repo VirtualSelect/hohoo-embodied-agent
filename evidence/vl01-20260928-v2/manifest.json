@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-27T16:39:54.808071+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "gitCommit": "4128ea683e8705db40487dc9cc520069c3393e0f",
+  "dirty": true,
+  "sourceSha256": {
+    "run.py": "b1cb1a7e9d852524f5fea17a02d59c66b5e8a48e368db09e1d96104b557da79a",
+    "scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807",
+    "protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588"
+  },
+  "kind": "MuJoCo simulation; not real robot evidence"
+}

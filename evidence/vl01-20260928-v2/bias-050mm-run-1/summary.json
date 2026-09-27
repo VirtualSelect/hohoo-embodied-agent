@@ -1,0 +1,16 @@
+{
+  "offset_m": 0.05,
+  "success": false,
+  "max_cube_z_m": 0.026313783351316063,
+  "final_cube_xyz_m": [
+    0.007025348730982233,
+    -1.4163529737302998e-12,
+    0.019990019857682825
+  ],
+  "final_xy_error_m": 0.2620633284804655,
+  "lifted": false,
+  "failure": "not_lifted",
+  "recorded_rows": 460,
+  "simulation_seconds": 9.199999999999742,
+  "warnings": {}
+}

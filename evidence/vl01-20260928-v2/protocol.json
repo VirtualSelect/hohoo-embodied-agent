@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "kind": "educational-simulation",
+  "question": "With a fixed object and controller, how does x-axis grasp-target bias change physical pick-and-place outcomes?",
+  "offsets_m": [
+    0,
+    0.025,
+    0.05
+  ],
+  "repeats": 3,
+  "randomization": "none; repeated deterministic rollouts are repeatability checks, not independent statistical trials",
+  "timestep_s": 0.002,
+  "record_every_steps": 10,
+  "target_world_m": [
+    0.24,
+    0.12,
+    0.026
+  ],
+  "success": {
+    "cube_lift_height_m": 0.1,
+    "bin_center_xy_m": [
+      0.24,
+      0.12
+    ],
+    "max_abs_xy_error_m": 0.045,
+    "cube_rest_z_m": 0.026,
+    "max_abs_z_error_m": 0.006,
+    "max_linear_speed_m_s": 0.02,
+    "settle_window_s": 0.5,
+    "require_no_finger_contact": true
+  },
+  "controller": "fixed phase schedule with smooth Cartesian setpoints and position actuators; no vision, IK, LLM, training or teleportation"
+}
