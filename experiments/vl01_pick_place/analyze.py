@@ -58,6 +58,8 @@ def main():
     fig.suptitle("VL01 · Recorded MuJoCo trajectories\nOne deterministic rollout shown per condition", fontsize=14)
     fig.savefig(a.run / "trajectories.png", dpi=150)
     fig.savefig(a.run / "trajectories.svg")
+    svg = a.run / "trajectories.svg"
+    svg.write_text("\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines()) + "\n", encoding="utf-8")
     plt.close(fig)
     (a.run / "audit.json").write_text(json.dumps(audit, indent=2), encoding="utf-8")
     print(f"{len(audit)} saved trajectories audited; figure generated from CSV only.")
