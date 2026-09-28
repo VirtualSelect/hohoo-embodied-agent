@@ -1,0 +1,47 @@
+[
+  {
+    "episode": "bias-000mm-run-1",
+    "successFromSampledTrajectory": true,
+    "rows": 460
+  },
+  {
+    "episode": "bias-000mm-run-2",
+    "successFromSampledTrajectory": true,
+    "rows": 460
+  },
+  {
+    "episode": "bias-000mm-run-3",
+    "successFromSampledTrajectory": true,
+    "rows": 460
+  },
+  {
+    "episode": "bias-025mm-run-1",
+    "successFromSampledTrajectory": false,
+    "rows": 460
+  },
+  {
+    "episode": "bias-025mm-run-2",
+    "successFromSampledTrajectory": false,
+    "rows": 460
+  },
+  {
+    "episode": "bias-025mm-run-3",
+    "successFromSampledTrajectory": false,
+    "rows": 460
+  },
+  {
+    "episode": "bias-050mm-run-1",
+    "successFromSampledTrajectory": false,
+    "rows": 460
+  },
+  {
+    "episode": "bias-050mm-run-2",
+    "successFromSampledTrajectory": false,
+    "rows": 460
+  },
+  {
+    "episode": "bias-050mm-run-3",
+    "successFromSampledTrajectory": false,
+    "rows": 460
+  }
+]
