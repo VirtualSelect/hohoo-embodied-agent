@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "E3-transfer-monitor",
+  "conditions": [
+    "clean",
+    "observation-gap",
+    "forced-open"
+  ],
+  "modes": {
+    "once": 0,
+    "immediate": 1,
+    "debounced": 3
+  },
+  "repeats": 3,
+  "offset_m": 0,
+  "monitor_phases": [
+    "transfer"
+  ],
+  "sample_period_s": 0.02,
+  "fault_time_s": 4.8,
+  "forced_open_duration_s": 0.24,
+  "observation_gap_samples": 1,
+  "hold_s": 0.6,
+  "randomization": "none; identical deterministic repeats, not independent trials",
+  "hypothesis": "Continuous contact monitoring cancels further transfer after grip loss; requiring three consecutive bad observations may tolerate one missing observation at the cost of detection delay.",
+  "scope": "Privileged simulator contacts; forced-open actuator fault is not a natural friction-slip model. No vision, real robot emergency stop or recovery."
+}
