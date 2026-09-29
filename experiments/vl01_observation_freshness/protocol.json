@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "id": "E4-observation-freshness",
+  "periods_ms": [
+    10,
+    20,
+    50
+  ],
+  "conditions": [
+    "clean",
+    "empty-40ms",
+    "forced-open",
+    "replay-good",
+    "silence"
+  ],
+  "policies": [
+    "count3",
+    "elapsed40",
+    "fresh60"
+  ],
+  "repeats": 1,
+  "dt_s": 0.002,
+  "log_period_s": 0.02,
+  "monitor_phase": "transfer",
+  "fault_start_s": 4.8,
+  "open_duration_s": 0.24,
+  "empty_duration_s": 0.04,
+  "hold_s": 0.6,
+  "bad_duration_ms": 40,
+  "max_age_ms": 60,
+  "timestamp_boundary": "age >= 60 ms; elapsed >= 40 ms; integer physics ticks",
+  "transport": "Capture and delivery use one simulation clock. Fresh packet every period; first sample at t=0.002s. replay-good keeps the last pre-fault capture tick, sequence and contacts but delivers again. silence delivers nothing. Both include the same forced opening as forced-open.",
+  "hypotheses": [
+    "Three samples impose cadence-dependent waiting; elapsed duration reduces this coupling but remains quantized.",
+    "A fresh receipt of an old good observation can hide actual contact loss. Source-age checks should cancel both replay and silence."
+  ],
+  "scope": "One deterministic rollout per matrix cell; 45 rollouts, no independent random trials. Privileged simulated contact, controlled actuator opening, no natural slip, clock skew, network jitter, vision, recovery or hardware safety validation."
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "Measured log plots, not scene recordings",
+  "rendererSha256": "0884a0356c8f2626fcaa18ad1a0208b58194e015c0cc7bbdafb3f31553a4d2fd",
+  "evidenceCommit": "7ef9442704ec2e7851f67949097ee8275697aec5",
+  "auditSha256": "2b845ca8fed708159e08e951a6156e1799d81b5ac4bd98231dc4c7fdc9400f6d",
+  "files": {
+    "sampling-delay.png": "32e6ae4ad82a67ceddf501e0cb48db1e812d634b58fd1ec2c208ee8f6d850d10",
+    "freshness-timeline.png": "513c7205772a7b933bf54ee3ce6bffea96f4a54327f3860fc904b7c0f7deffd1"
+  }
+}

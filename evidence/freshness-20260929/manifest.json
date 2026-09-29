@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-29T11:47:59.524272+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "gitCommit": "7ef9442704ec2e7851f67949097ee8275697aec5",
+  "dirty": false,
+  "sourceSha256": {
+    "experiments/vl01_observation_freshness/audit.py": "379ed5c0b096ea2b064ea2b0b0c303d173471a1d382b9414e12c84e2184470df",
+    "experiments/vl01_observation_freshness/monitor.py": "fd32ac3f8fb266aa911b1dacec705d674372d0f5884b9122afca6d98a99b2cad",
+    "experiments/vl01_observation_freshness/run.py": "b3cb68818621b3c35466134a07e525e7fadbf63777e87081ef7e6f218bc79e08",
+    "experiments/vl01_observation_freshness/test_monitor.py": "7a36734e60a98625ffde0e3167632523dbb5bf7f78ff517c583d0b9f8f31692a",
+    "experiments/vl01_observation_freshness/protocol.json": "97157ce40d4367801f2e6f9fc6c501e2e0c1929c2d82e54738205e20db8f3714",
+    "experiments/vl01_grasp_guard/run.py": "d32a2ae28967b3dd3e82558724e9d3ab7bcdb7d4c3036c50624705b034069534",
+    "experiments/vl01_grasp_guard/protocol.json": "5e287b82ca29f195940638fa4db651e99ff20e148833a9fb865f5a5f8b83ddd4",
+    "experiments/vl01_pick_place/run.py": "b1cb1a7e9d852524f5fea17a02d59c66b5e8a48e368db09e1d96104b557da79a",
+    "experiments/vl01_pick_place/protocol.json": "22fdfa09a6cf54be40c5f9e7f8577cf182e029e03660ca11b65b9628a17daa74",
+    "experiments/vl01_pick_place/scene.xml": "d41521261d007eadbfacd3966149635420ec3a1a3e0dab17de90cf725885dcd6"
+  },
+  "kind": "MuJoCo simulation; not real robot evidence",
+  "protocol": {
+    "version": 1,
+    "id": "E4-observation-freshness",
+    "periods_ms": [
+      10,
+      20,
+      50
+    ],
+    "conditions": [
+      "clean",
+      "empty-40ms",
+      "forced-open",
+      "replay-good",
+      "silence"
+    ],
+    "policies": [
+      "count3",
+      "elapsed40",
+      "fresh60"
+    ],
+    "repeats": 1,
+    "dt_s": 0.002,
+    "log_period_s": 0.02,
+    "monitor_phase": "transfer",
+    "fault_start_s": 4.8,
+    "open_duration_s": 0.24,
+    "empty_duration_s": 0.04,
+    "hold_s": 0.6,
+    "bad_duration_ms": 40,
+    "max_age_ms": 60,
+    "timestamp_boundary": "age >= 60 ms; elapsed >= 40 ms; integer physics ticks",
+    "transport": "Capture and delivery use one simulation clock. Fresh packet every period; first sample at t=0.002s. replay-good keeps the last pre-fault capture tick, sequence and contacts but delivers again. silence delivers nothing. Both include the same forced opening as forced-open.",
+    "hypotheses": [
+      "Three samples impose cadence-dependent waiting; elapsed duration reduces this coupling but remains quantized.",
+      "A fresh receipt of an old good observation can hide actual contact loss. Source-age checks should cancel both replay and silence."
+    ],
+    "scope": "One deterministic rollout per matrix cell; 45 rollouts, no independent random trials. Privileged simulated contact, controlled actuator opening, no natural slip, clock skew, network jitter, vision, recovery or hardware safety validation."
+  }
+}

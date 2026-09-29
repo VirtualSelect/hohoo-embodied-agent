@@ -1,0 +1,20 @@
+{
+  "period_ms": 10,
+  "condition": "replay-good",
+  "policy": "count3",
+  "gate": {
+    "accepted": true,
+    "reasons": [],
+    "samples": 10,
+    "window_start": 3.801999999999803,
+    "window_end": 3.981999999999783,
+    "min_cube_z_m": 0.15833290580402057,
+    "both_pad_samples": 10
+  },
+  "alarm_tick": null,
+  "alarm_time_s": null,
+  "cause": "",
+  "success": false,
+  "simulation_seconds": 9.199999999999742,
+  "warnings": {}
+}
