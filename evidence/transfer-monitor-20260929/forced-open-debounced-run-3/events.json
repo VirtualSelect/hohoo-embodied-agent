@@ -1,0 +1,55 @@
+[
+  {
+    "type": "phase",
+    "phase": "approach",
+    "time": 0.0
+  },
+  {
+    "type": "phase",
+    "phase": "descend",
+    "time": 1.0000000000000007
+  },
+  {
+    "type": "phase",
+    "phase": "close",
+    "time": 2.0000000000000013
+  },
+  {
+    "type": "phase",
+    "phase": "lift",
+    "time": 2.7999999999999132
+  },
+  {
+    "type": "gate",
+    "time": 3.999999999999781,
+    "accepted": true,
+    "reasons": [],
+    "samples": 10,
+    "window_start": 3.801999999999803,
+    "window_end": 3.981999999999783,
+    "min_cube_z_m": 0.15833290580402057,
+    "both_pad_samples": 10
+  },
+  {
+    "type": "phase",
+    "phase": "transfer",
+    "time": 3.999999999999781
+  },
+  {
+    "type": "alarm",
+    "time": 4.841999999999689,
+    "bad_streak": 3,
+    "hold_target": [
+      0.1419692532622222,
+      0.0709846266311111,
+      0.18,
+      0.033
+    ],
+    "cause": "bilateral_contact_missing"
+  },
+  {
+    "type": "phase",
+    "phase": "hold_after_loss",
+    "time": 4.841999999999689
+  }
+]

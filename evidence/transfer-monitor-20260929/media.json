@@ -1,0 +1,24 @@
+[
+  {
+    "episode": "forced-open-once-run-1",
+    "frames": 460,
+    "fps": 50,
+    "video_seconds": 9.2,
+    "first_sample_s": 0.002,
+    "last_sample_s": 9.181999999999736,
+    "kind": "CSV centre-coordinate XZ projection; not a MuJoCo scene recording",
+    "csvSha256": "bd6df4558870b13edcf974750fb3952df895059d51547328f5f0868d024503c1",
+    "mediaSha256": "afdb1d9a85977be6b296ee113cb53744e04fd988584adf58c8019a9c9da769b4"
+  },
+  {
+    "episode": "forced-open-debounced-run-1",
+    "frames": 273,
+    "fps": 50,
+    "video_seconds": 5.46,
+    "first_sample_s": 0.002,
+    "last_sample_s": 5.441999999999623,
+    "kind": "CSV centre-coordinate XZ projection; not a MuJoCo scene recording",
+    "csvSha256": "a014faf4d321631196b397cb35d42c0daa8ce57c0309c383fa5af3dda2ce75d8",
+    "mediaSha256": "f0b7a293852991acc8b5d96b05b3091059da195ba2a7512e4b3d951bb431e8dd"
+  }
+]

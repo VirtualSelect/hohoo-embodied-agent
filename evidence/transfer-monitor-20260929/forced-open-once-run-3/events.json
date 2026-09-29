@@ -1,0 +1,58 @@
+[
+  {
+    "type": "phase",
+    "phase": "approach",
+    "time": 0.0
+  },
+  {
+    "type": "phase",
+    "phase": "descend",
+    "time": 1.0000000000000007
+  },
+  {
+    "type": "phase",
+    "phase": "close",
+    "time": 2.0000000000000013
+  },
+  {
+    "type": "phase",
+    "phase": "lift",
+    "time": 2.7999999999999132
+  },
+  {
+    "type": "gate",
+    "time": 3.999999999999781,
+    "accepted": true,
+    "reasons": [],
+    "samples": 10,
+    "window_start": 3.801999999999803,
+    "window_end": 3.981999999999783,
+    "min_cube_z_m": 0.15833290580402057,
+    "both_pad_samples": 10
+  },
+  {
+    "type": "phase",
+    "phase": "transfer",
+    "time": 3.999999999999781
+  },
+  {
+    "type": "phase",
+    "phase": "lower",
+    "time": 5.499999999999616
+  },
+  {
+    "type": "phase",
+    "phase": "release",
+    "time": 6.499999999999506
+  },
+  {
+    "type": "phase",
+    "phase": "retreat",
+    "time": 7.199999999999429
+  },
+  {
+    "type": "phase",
+    "phase": "settle",
+    "time": 8.199999999999408
+  }
+]

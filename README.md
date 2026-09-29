@@ -68,3 +68,6 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 抓取失败反馈
 
 [第二轮：抓取确认后再搬运](experiments/vl01_grasp_guard/README.md)已完成18个配对回合：失败组取消空手搬运，成功组轨迹保持不变。记录位于 evidence/grasp-guard-20260929。状态来自仿真真值，不代表视觉或真实机器人能力。
+## 搬运中的持续监测
+
+[第三轮：持续接触监测](experiments/vl01_transfer_monitor/README.md)已完成27回合。单次空接触报告会触发立即停止，连续三次确认可以容忍；受控松爪后三种策略都未挽回掉落。代码、CSV审计与二维轨迹重放公开，完整M4/M5仍未完成。
