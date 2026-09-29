@@ -1,0 +1,169 @@
+{
+  "episodes": [
+    {
+      "episode": "baseline-000mm-run-1",
+      "rows": 460,
+      "success": true,
+      "gateAccepted": true,
+      "transfer": true,
+      "distance_m": 0.26832957177994704,
+      "csvSha256": "e37527e910e5b8872a9dd5089234265660eda7208d21270f8326f55b3f55c317"
+    },
+    {
+      "episode": "guarded-000mm-run-1",
+      "rows": 460,
+      "success": true,
+      "gateAccepted": true,
+      "transfer": true,
+      "distance_m": 0.26832957177994704,
+      "csvSha256": "e37527e910e5b8872a9dd5089234265660eda7208d21270f8326f55b3f55c317"
+    },
+    {
+      "episode": "baseline-000mm-run-2",
+      "rows": 460,
+      "success": true,
+      "gateAccepted": true,
+      "transfer": true,
+      "distance_m": 0.26832957177994704,
+      "csvSha256": "e37527e910e5b8872a9dd5089234265660eda7208d21270f8326f55b3f55c317"
+    },
+    {
+      "episode": "guarded-000mm-run-2",
+      "rows": 460,
+      "success": true,
+      "gateAccepted": true,
+      "transfer": true,
+      "distance_m": 0.26832957177994704,
+      "csvSha256": "e37527e910e5b8872a9dd5089234265660eda7208d21270f8326f55b3f55c317"
+    },
+    {
+      "episode": "baseline-000mm-run-3",
+      "rows": 460,
+      "success": true,
+      "gateAccepted": true,
+      "transfer": true,
+      "distance_m": 0.26832957177994704,
+      "csvSha256": "e37527e910e5b8872a9dd5089234265660eda7208d21270f8326f55b3f55c317"
+    },
+    {
+      "episode": "guarded-000mm-run-3",
+      "rows": 460,
+      "success": true,
+      "gateAccepted": true,
+      "transfer": true,
+      "distance_m": 0.26832957177994704,
+      "csvSha256": "e37527e910e5b8872a9dd5089234265660eda7208d21270f8326f55b3f55c317"
+    },
+    {
+      "episode": "baseline-025mm-run-1",
+      "rows": 460,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": true,
+      "distance_m": 0.24622144684576514,
+      "csvSha256": "4e971908e4a6ca14bc6d73131ce97a14cdab7e5ac7a0bb6b0c5773f2cff5b1cf"
+    },
+    {
+      "episode": "guarded-025mm-run-1",
+      "rows": 230,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": false,
+      "distance_m": 2.224885553570033e-11,
+      "csvSha256": "6258c317b0d7a53e09bedc9ca759606df88e3ac7d8b110bd56a0b0d25665d43e"
+    },
+    {
+      "episode": "baseline-025mm-run-2",
+      "rows": 460,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": true,
+      "distance_m": 0.24622144684576514,
+      "csvSha256": "4e971908e4a6ca14bc6d73131ce97a14cdab7e5ac7a0bb6b0c5773f2cff5b1cf"
+    },
+    {
+      "episode": "guarded-025mm-run-2",
+      "rows": 230,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": false,
+      "distance_m": 2.224885553570033e-11,
+      "csvSha256": "6258c317b0d7a53e09bedc9ca759606df88e3ac7d8b110bd56a0b0d25665d43e"
+    },
+    {
+      "episode": "baseline-025mm-run-3",
+      "rows": 460,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": true,
+      "distance_m": 0.24622144684576514,
+      "csvSha256": "4e971908e4a6ca14bc6d73131ce97a14cdab7e5ac7a0bb6b0c5773f2cff5b1cf"
+    },
+    {
+      "episode": "guarded-025mm-run-3",
+      "rows": 230,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": false,
+      "distance_m": 2.224885553570033e-11,
+      "csvSha256": "6258c317b0d7a53e09bedc9ca759606df88e3ac7d8b110bd56a0b0d25665d43e"
+    },
+    {
+      "episode": "baseline-050mm-run-1",
+      "rows": 460,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": true,
+      "distance_m": 0.22472205238256096,
+      "csvSha256": "96df063c262833859034cf03f101207204496814f435c1fcfc510838ad72703c"
+    },
+    {
+      "episode": "guarded-050mm-run-1",
+      "rows": 230,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": false,
+      "distance_m": 1.0223419333321715e-11,
+      "csvSha256": "730dc93fa674e0ee127fc30d359e626720ab717f750f3d35af7aa8d08a175004"
+    },
+    {
+      "episode": "baseline-050mm-run-2",
+      "rows": 460,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": true,
+      "distance_m": 0.22472205238256096,
+      "csvSha256": "96df063c262833859034cf03f101207204496814f435c1fcfc510838ad72703c"
+    },
+    {
+      "episode": "guarded-050mm-run-2",
+      "rows": 230,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": false,
+      "distance_m": 1.0223419333321715e-11,
+      "csvSha256": "730dc93fa674e0ee127fc30d359e626720ab717f750f3d35af7aa8d08a175004"
+    },
+    {
+      "episode": "baseline-050mm-run-3",
+      "rows": 460,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": true,
+      "distance_m": 0.22472205238256096,
+      "csvSha256": "96df063c262833859034cf03f101207204496814f435c1fcfc510838ad72703c"
+    },
+    {
+      "episode": "guarded-050mm-run-3",
+      "rows": 230,
+      "success": false,
+      "gateAccepted": false,
+      "transfer": false,
+      "distance_m": 1.0223419333321715e-11,
+      "csvSha256": "730dc93fa674e0ee127fc30d359e626720ab717f750f3d35af7aa8d08a175004"
+    }
+  ],
+  "prefixPairsIdentical": 9,
+  "baselineMatchesPrevious": 9,
+  "successfulPairsIdentical": 3
+}

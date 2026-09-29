@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "id": "E2-grasp-guard",
+  "offsets_m": [
+    0,
+    0.025,
+    0.05
+  ],
+  "repeats": 3,
+  "modes": [
+    "baseline",
+    "guarded"
+  ],
+  "window_s": 0.2,
+  "min_samples": 10,
+  "minimum_span_s": 0.18,
+  "max_sample_age_s": 0.025,
+  "min_cube_z_m": 0.1,
+  "hold_s": 0.6,
+  "require_both_pads": true,
+  "randomization": "none; identical deterministic repeats, not independent trials",
+  "hypothesis": "A lift/contact gate can prevent empty transport without changing successful placement in these fixed conditions.",
+  "scope": "Privileged simulator body position and contact observations; no vision, retry, learned policy, ROS2 or physical emergency stop."
+}
