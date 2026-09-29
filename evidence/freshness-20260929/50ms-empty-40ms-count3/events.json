@@ -1,0 +1,47 @@
+[
+  {
+    "type": "phase",
+    "phase": "approach",
+    "tick": 0
+  },
+  {
+    "type": "phase",
+    "phase": "descend",
+    "tick": 500
+  },
+  {
+    "type": "phase",
+    "phase": "close",
+    "tick": 1000
+  },
+  {
+    "type": "phase",
+    "phase": "lift",
+    "tick": 1400
+  },
+  {
+    "type": "phase",
+    "phase": "transfer",
+    "tick": 2000
+  },
+  {
+    "type": "phase",
+    "phase": "lower",
+    "tick": 2750
+  },
+  {
+    "type": "phase",
+    "phase": "release",
+    "tick": 3250
+  },
+  {
+    "type": "phase",
+    "phase": "retreat",
+    "tick": 3600
+  },
+  {
+    "type": "phase",
+    "phase": "settle",
+    "tick": 4100
+  }
+]

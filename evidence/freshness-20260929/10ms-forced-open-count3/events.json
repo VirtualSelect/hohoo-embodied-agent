@@ -1,0 +1,39 @@
+[
+  {
+    "type": "phase",
+    "phase": "approach",
+    "tick": 0
+  },
+  {
+    "type": "phase",
+    "phase": "descend",
+    "tick": 500
+  },
+  {
+    "type": "phase",
+    "phase": "close",
+    "tick": 1000
+  },
+  {
+    "type": "phase",
+    "phase": "lift",
+    "tick": 1400
+  },
+  {
+    "type": "phase",
+    "phase": "transfer",
+    "tick": 2000
+  },
+  {
+    "type": "alarm",
+    "tick": 2411,
+    "time": 4.822,
+    "cause": "contact",
+    "hold_target": [
+      0.13722691584000002,
+      0.06861345792000001,
+      0.18,
+      0.033
+    ]
+  }
+]

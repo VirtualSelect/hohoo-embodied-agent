@@ -31,3 +31,15 @@
 `control.csv`逐2ms记录搬运/报警保持阶段的真实模拟接触、包序号、捕获时刻、接收事件、采用状态、年龄和报警。`trajectory.csv`与`states.jsonl`保留原50Hz物理轨迹/状态，用于核对配对前缀和旧基线。`events.json`保留冻结目标；`manifest.json`保存代码版本、环境、协议、源文件哈希。独立audit不导入运行器/监测器，重新计算故障、包、计数、年龄、报警、任务验收和配对前缀，并生成两幅实测图。
 
 策略未报警并不代表安全；已报警也不代表成功放置。图表是日志可视化，不是摄像头或三维录像。
+
+## 本轮结果与展示
+
+45回合证据已保存在 [evidence/freshness-20260929](../../evidence/freshness-20260929)。17项新监测边界测试与原有24项测试通过；独立audit通过45回合、45对状态前缀及9条旧基线比较。
+
+生成用于文章的图例精简版（仅日志可视化，不重跑仿真）：
+
+```powershell
+.venv/Scripts/python.exe experiments/vl01_observation_freshness/render.py outputs/my-freshness
+```
+
+计数策略从10ms观测改到50ms观测，当前故障相位下的报警等待由22ms变为102ms；40ms跨度策略为42ms与52ms。重送旧正常包和完全静默时，只有年龄检查取消搬运。60ms是本协议的选定阈值，不是经过安全评估的通用参数。详见证据README与audit.json。

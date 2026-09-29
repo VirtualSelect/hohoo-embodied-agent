@@ -2,7 +2,7 @@
 
 以仿真优先（Simulation First）的方式，从 AI 应用开发逐步走向机器人软件、数据与具身智能。
 
-**当前状态：已实现首个 MuJoCo 教学实验。九次确定性抓取偏差对照已运行并保留轨迹、视频和失败记录；完整 Agent、ROS2 与训练路线尚未实现。**
+**当前状态：已完成四轮 MuJoCo 教学对照，覆盖拾取偏移、抓取门控、搬运监测与观测新鲜度。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
 
 - [学习之旅](https://huhohoo.com/journey)
 - [虚拟具身实验室](https://huhohoo.com/journey/virtual-lab)
@@ -62,7 +62,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 - [场景、坐标、命令与结果说明](experiments/vl01_pick_place/README.md)
 - [冻结协议](experiments/vl01_pick_place/protocol.json)
 - [原始结果与产物](evidence/vl01-20260928-v2)
-- [配套文章（博客分支待发布）](https://huhohoo.com/docs/embodied-ai/mujoco-first-pick-place)
+- [配套文章](https://huhohoo.com/docs/embodied-ai/mujoco-first-pick-place)
 
 2026-09-28，由 Codex 在作者授权下执行。无偏移组三次满足协议；25 / 50 mm 偏移组未抬起方块。重复没有随机化，不作为泛化成功率；不会因此把整个 M4/M5 标为完成。作者个人学习与人工复核另行进行。
 ## 抓取失败反馈
@@ -71,3 +71,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 搬运中的持续监测
 
 [第三轮：持续接触监测](experiments/vl01_transfer_monitor/README.md)已完成27回合。单次空接触报告会触发立即停止，连续三次确认可以容忍；受控松爪后三种策略都未挽回掉落。代码、CSV审计与二维轨迹重放公开，完整M4/M5仍未完成。
+
+## 观测新鲜度与采样间隔
+
+[第四轮：消息到达不代表观测仍然新鲜](experiments/vl01_observation_freshness/README.md)完成45个固定条件回合，分离异常计数、异常持续跨度与60ms年龄检查。旧正常包重送和静默条件均保留真实松爪记录；全部代码、控制日志与独立审计位于 evidence/freshness-20260929。
