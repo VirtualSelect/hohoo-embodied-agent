@@ -1,0 +1,39 @@
+test_bias_does_not_move_place_target (test_contract.ContractTests.test_bias_does_not_move_place_target) ... ok
+test_entire_settle_window_required (test_contract.ContractTests.test_entire_settle_window_required) ... ok
+test_inside_without_lift_is_not_success (test_contract.ContractTests.test_inside_without_lift_is_not_success) ... ok
+test_lift_alone_is_not_success (test_contract.ContractTests.test_lift_alone_is_not_success) ... ok
+test_scene_is_dynamic_not_welded_cube (test_contract.ContractTests.test_scene_is_dynamic_not_welded_cube) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+OK
+test_future_evidence_ignored (test_guard.GuardTest.test_future_evidence_ignored) ... ok
+test_height_boundary_is_strict (test_guard.GuardTest.test_height_boundary_is_strict) ... ok
+test_held_object (test_guard.GuardTest.test_held_object) ... ok
+test_nan_cannot_pass (test_guard.GuardTest.test_nan_cannot_pass) ... ok
+test_old_or_short_history_is_rejected (test_guard.GuardTest.test_old_or_short_history_is_rejected) ... ok
+test_out_of_order_or_duplicate_samples (test_guard.GuardTest.test_out_of_order_or_duplicate_samples) ... ok
+test_single_contact_is_not_grasp (test_guard.GuardTest.test_single_contact_is_not_grasp) ... ok
+test_transient_contact_does_not_pass (test_guard.GuardTest.test_transient_contact_does_not_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
+test_alarm_latches_even_when_contact_returns (test_monitor.MonitorTests.test_alarm_latches_even_when_contact_returns) ... ok
+test_clean_never_alarms (test_monitor.MonitorTests.test_clean_never_alarms) ... ok
+test_immediate_requires_only_one_bad_sample (test_monitor.MonitorTests.test_immediate_requires_only_one_bad_sample) ... ok
+test_intended_release_is_not_a_fault (test_monitor.MonitorTests.test_intended_release_is_not_a_fault) ... ok
+test_invalid_threshold_rejected (test_monitor.MonitorTests.test_invalid_threshold_rejected) ... ok
+test_nonconsecutive_losses_do_not_accumulate (test_monitor.MonitorTests.test_nonconsecutive_losses_do_not_accumulate) ... ok
+test_once_observes_without_interrupting (test_monitor.MonitorTests.test_once_observes_without_interrupting) ... ok
+test_other_contact_is_not_finger_contact (test_monitor.MonitorTests.test_other_contact_is_not_finger_contact) ... ok
+test_single_missing_observation_recovers (test_monitor.MonitorTests.test_single_missing_observation_recovers) ... ok
+test_stage_boundary_resets_counter (test_monitor.MonitorTests.test_stage_boundary_resets_counter) ... ok
+test_three_sample_boundary (test_monitor.MonitorTests.test_three_sample_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK
