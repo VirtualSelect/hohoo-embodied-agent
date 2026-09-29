@@ -13,7 +13,8 @@ root=Path(sys.argv[1])
 repo=Path(__file__).resolve().parents[2]
 manifest=json.loads((root/"manifest.json").read_text())
 for path,expected in manifest["sourceSha256"].items():
-    assert hashlib.sha256((repo/path).read_bytes()).hexdigest()==expected,path
+    raw=(repo/path).read_bytes(); lf=raw.replace(b"\r\n",b"\n")
+    assert expected in {hashlib.sha256(v).hexdigest() for v in (raw,lf,lf.replace(b"\n",b"\r\n"))},path
 summary=json.loads((root/"summary.json").read_text())
 assert len(summary)==18
 all_rows={}

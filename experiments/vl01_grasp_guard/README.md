@@ -14,6 +14,23 @@
     .venv/Scripts/python.exe experiments/vl01_grasp_guard/run.py --out evidence/my-guard-run --render
     .venv/Scripts/python.exe experiments/vl01_grasp_guard/audit.py evidence/my-guard-run
 
-输出目录必须不存在。视频仅每组第 1 回合，25 FPS；CSV 和 qpos/qvel/ctrl 保存状态 50 Hz；物理步进 500 Hz。原实验文件不修改。审计独立重算判定，并验证前 4 秒完全相同、baseline 与旧实验完全相同、成功组全轨迹相同。通过原始状态文件可使用原实验 replay.py 重放，但其场景 hash 清单格式不同；本次以新 CSV 审计和实际执行视频为准。
+输出目录必须不存在。视频仅每组第 1 回合，25 FPS；CSV 和 qpos/qvel/ctrl 保存状态 50 Hz；物理步进 500 Hz。原实验文件不修改。审计独立重算判定，并验证前 4 秒完全相同、baseline 与旧实验完全相同、成功组全轨迹相同。新 replay.py 校验记录中的场景 hash 与 MuJoCo 版本，以 50 FPS 重放保存状态；重放不是一次新的试验。
 
-结果在实际运行后补充。
+## 2026-09-29 实际结果
+
+源代码先冻结于 139c89a；18 回合保存在 evidence/grasp-guard-20260929，8 项边界测试通过。
+独立审计确认：9 个前缀轨迹完全相同，9 个 baseline CSV 与旧版实验完全相同，3 个成功条件的整个配对轨迹完全相同。
+
+| 偏移 | baseline 完成 | guarded 完成 | guarded 取消搬运 | baseline 判定后水平路程 |
+| --- | --- | --- | --- | --- |
+| 0 mm | 3/3 | 3/3 | 0/3 | 268.330 mm |
+| 25 mm | 0/3 | 0/3 | 3/3 | 246.221 mm |
+| 50 mm | 0/3 | 0/3 | 3/3 | 224.722 mm |
+
+拒绝组保持 0.6 秒后结束，总仿真时长 4.6 秒；baseline 9.2 秒。拒绝组判定后水平路程约 10^-8 mm，为数值残余。图中的位移与表中的累计路程是不同指标；此轨迹接近直线，因此数值接近。不声称提高任务成功率或真实硬件安全性。
+
+重放：
+
+    .venv/Scripts/python.exe experiments/vl01_grasp_guard/replay.py evidence/grasp-guard-20260929/guarded-025mm-run-1/states.jsonl --out outputs/guard-replay.mp4
+
+[配套文章](https://huhohoo.com/docs/embodied-ai/mujoco-grasp-guard)

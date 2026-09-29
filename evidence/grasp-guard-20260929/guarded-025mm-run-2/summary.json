@@ -1,0 +1,33 @@
+{
+  "offset_m": 0.025,
+  "mode": "guarded",
+  "success": false,
+  "transfer_executed": false,
+  "post_gate_hand_xy_distance_m": 2.224885553570033e-11,
+  "gate": {
+    "accepted": false,
+    "reasons": [
+      "height_not_confirmed",
+      "bilateral_contact_not_confirmed"
+    ],
+    "samples": 10,
+    "window_start": 3.801999999999803,
+    "window_end": 3.981999999999783,
+    "min_cube_z_m": 0.019990019857682836,
+    "both_pad_samples": 0,
+    "applied": true,
+    "decisionTime": 3.999999999999781
+  },
+  "max_cube_z_m": 0.02596076,
+  "final_cube_xyz_m": [
+    0.008969021304720085,
+    -1.416363899132935e-12,
+    0.019990019857682836
+  ],
+  "final_xy_error_m": 0.26033692230883965,
+  "lifted": false,
+  "failure": "not_lifted",
+  "recorded_rows": 230,
+  "simulation_seconds": 4.599999999999715,
+  "warnings": {}
+}

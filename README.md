@@ -65,3 +65,6 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 - [配套文章（博客分支待发布）](https://huhohoo.com/docs/embodied-ai/mujoco-first-pick-place)
 
 2026-09-28，由 Codex 在作者授权下执行。无偏移组三次满足协议；25 / 50 mm 偏移组未抬起方块。重复没有随机化，不作为泛化成功率；不会因此把整个 M4/M5 标为完成。作者个人学习与人工复核另行进行。
+## 抓取失败反馈
+
+[第二轮：抓取确认后再搬运](experiments/vl01_grasp_guard/README.md)已完成18个配对回合：失败组取消空手搬运，成功组轨迹保持不变。记录位于 evidence/grasp-guard-20260929。状态来自仿真真值，不代表视觉或真实机器人能力。
