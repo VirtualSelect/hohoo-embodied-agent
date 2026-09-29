@@ -70,4 +70,3 @@ if __name__=="__main__":
     result=[render(a.root,f"forced-open-{mode}-run-1") for mode in ("once","debounced")]
     (a.root/"media.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf8")
     print(json.dumps(result))
-
