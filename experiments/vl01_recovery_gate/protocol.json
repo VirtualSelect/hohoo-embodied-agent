@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "id": "E5-recovery-gate",
+  "dt_s": 0.002,
+  "period_ms": 20,
+  "conditions": [
+    "clean",
+    "delay-40ms",
+    "reordered",
+    "gap",
+    "stale-replay",
+    "gap-and-drop"
+  ],
+  "policies": [
+    "latched",
+    "receipt",
+    "revalidate"
+  ],
+  "repeats": 1,
+  "fault_start_s": 4.8,
+  "gap_end_s": 5.04,
+  "replay_end_s": 5.2,
+  "open_end_s": 5.04,
+  "horizon_s": 10.8,
+  "max_age_ms": 60,
+  "bad_span_ms": 40,
+  "confirm_span_ms": 100,
+  "max_hold_ms": 600,
+  "replan_transfer_s": 1.5,
+  "transport": "One simulation clock. 20ms captures. Constant 40ms delay in delay-40ms. Every third post-fault packet delayed 80ms in reordered. Gap suppresses delivery during [4.8,5.04); no catch-up. Stale-replay delivers the last pre-gap good packet until 5.2. gap-and-drop also opens the gripper during [4.8,5.04).",
+  "recovery": "Hold retains actuator targets, physics continues. Revalidate requires unique, ordered, post-hold captures, age <60ms, bilateral contact, cube_z >0.12m and cube-to-grip distance <0.05m, spanning100ms with gaps<=20ms. At600ms abort takes precedence. Replan from current measured grip pose to original transfer destination, followed by original lower/release/retreat/settle. Receipt baseline resumes the wall-clock trajectory after any valid packet, including stale/duplicate. Latched never resumes.",
+  "hypothesis": "New deliveries alone can produce unsafe resume decisions. Post-hold state evidence plus a new path can separate harmless communication gaps from lost grasps.",
+  "scope": "18 deterministic rollouts, one per cell. Privileged simulated observations, no learned policy, physical robot, real network or clock skew. Policies are bundles; differences do not isolate individual components. Synthetic fault schedules; no probabilistic success rate."
+}
