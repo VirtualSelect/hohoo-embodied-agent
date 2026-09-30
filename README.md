@@ -2,7 +2,7 @@
 
 以仿真优先（Simulation First）的方式，从 AI 应用开发逐步走向机器人软件、数据与具身智能。
 
-**当前状态：已完成四轮 MuJoCo 教学对照，覆盖拾取偏移、抓取门控、搬运监测与观测新鲜度。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
+**当前状态：已完成五轮 MuJoCo 教学对照，覆盖拾取偏移、抓取门控、搬运监测、观测新鲜度与恢复门控。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
 
 - [学习之旅](https://huhohoo.com/journey)
 - [虚拟具身实验室](https://huhohoo.com/journey/virtual-lab)
@@ -75,3 +75,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 观测新鲜度与采样间隔
 
 [第四轮：消息到达不代表观测仍然新鲜](experiments/vl01_observation_freshness/README.md)完成45个固定条件回合，分离异常计数、异常持续跨度与60ms年龄检查。旧正常包重送和静默条件均保留真实松爪记录；全部代码、控制日志与独立审计位于 evidence/freshness-20260929。
+
+## 观测恢复后的重新验收
+
+[第五轮](experiments/vl01_recovery_gate/README.md)完成18回合：延迟、乱序、通信间断与旧包重送。收到即恢复在旧包条件下9次恢复中有8次证据不足，却最终完成放置。新观测重新验收策略恢复有效抓取，掉落时保持停止；不实现重抓取。产物见 evidence/recovery-20260930。

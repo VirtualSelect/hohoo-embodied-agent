@@ -1,0 +1,12 @@
+[
+  {
+    "type": "hold",
+    "tick": 2421,
+    "reason": "stale"
+  },
+  {
+    "type": "abort",
+    "tick": 2721,
+    "reason": "revalidation_deadline"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "condition": "gap-and-drop",
+  "policy": "receipt",
+  "success": false,
+  "state": "running",
+  "holds": 6,
+  "resumes": 6,
+  "unsupported_resumes": 6,
+  "ignored_packets": 0,
+  "first_hold_tick": 2421,
+  "first_resume_tick": 2521,
+  "simulation_seconds": 10.800000000000276,
+  "warnings": {},
+  "initial_gate": {
+    "accepted": true,
+    "reasons": [],
+    "samples": 10,
+    "window_start": 3.801999999999803,
+    "window_end": 3.981999999999783,
+    "min_cube_z_m": 0.15833290580402057,
+    "both_pad_samples": 10
+  }
+}
