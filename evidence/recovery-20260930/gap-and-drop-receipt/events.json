@@ -1,0 +1,92 @@
+[
+  {
+    "type": "hold",
+    "tick": 2421,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2521,
+    "reason": "receipt",
+    "capture_tick": 2521,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2551,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2561,
+    "reason": "receipt",
+    "capture_tick": 2561,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2591,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2601,
+    "reason": "receipt",
+    "capture_tick": 2601,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2631,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2641,
+    "reason": "receipt",
+    "capture_tick": 2641,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2671,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2681,
+    "reason": "receipt",
+    "capture_tick": 2681,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2711,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2721,
+    "reason": "receipt",
+    "capture_tick": 2721,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  }
+]
