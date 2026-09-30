@@ -1,0 +1,137 @@
+[
+  {
+    "type": "hold",
+    "tick": 2421,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2521,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 130,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2522,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2531,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 140,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2532,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2541,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 150,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2542,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2551,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 160,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2552,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2561,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 170,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2562,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2571,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 180,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2572,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2581,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 190,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2582,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2591,
+    "reason": "receipt",
+    "capture_tick": 2391,
+    "age_ticks": 200,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2592,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2601,
+    "reason": "receipt",
+    "capture_tick": 2601,
+    "age_ticks": 0,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  }
+]

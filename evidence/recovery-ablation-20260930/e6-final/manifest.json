@@ -1,0 +1,83 @@
+{
+  "at": "2026-09-30T08:02:58.033812+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "gitCommit": "3b5d59dd24eff376325ee53348994b9ed87fb57d",
+  "dirty": true,
+  "sourceSha256": {
+    "experiments/vl01_recovery_ablation/run.py": "5c1c1bcade0f714e7f20f92fbfd5f3b7966d07996945b1cb2d53945922aea918",
+    "experiments/vl01_recovery_ablation/gate.py": "9991a1dcaca42ac55c1fb8e2287b2a7eff8306ba61d2e958f5d17e997d482919",
+    "experiments/vl01_recovery_ablation/test_gate.py": "484d8eb30fdb67065648b339d5acf909a0194e4bd6ac1d6e60da3f5b3f379f23",
+    "experiments/vl01_recovery_ablation/render.py": "1c9a169cdca2628f0007c01e116e18c9de40725696dae285db9e7033021179fb",
+    "experiments/vl01_recovery_ablation/audit.py": "1052afd8ddf3cda238b76e87bca8b778a63ea95eabbfc40810e1f4f774692416",
+    "experiments/vl01_recovery_ablation/test_ablation.py": "3c1f21eaed03d4e4817466c63a06c852c03bfda043df003e95480bfc168c841f",
+    "experiments/vl01_recovery_ablation/protocol.json": "238c7b486b284906993296a8853b2d42323e8fb865c4b3e1b7f969f0f3636455",
+    "experiments/vl01_grasp_guard/run.py": "57e809c223eac2ed1a7b58f47bd160f5525730732af8d29d544719decab90208",
+    "experiments/vl01_grasp_guard/protocol.json": "39d1030d334c38f4a027d280074db383abd9ee17ac72602188ca698730e6640f",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807"
+  },
+  "kind": "MuJoCo simulation; not real robot evidence",
+  "protocol": {
+    "version": 1,
+    "id": "E6-recovery-ablation",
+    "dt_s": 0.002,
+    "period_ms": 20,
+    "conditions": [
+      "clean",
+      "delay-40ms",
+      "reordered",
+      "gap",
+      "stale-replay",
+      "gap-and-drop"
+    ],
+    "repeats": 1,
+    "fault_start_s": 4.8,
+    "gap_end_s": 5.04,
+    "replay_end_s": 5.2,
+    "open_end_s": 5.04,
+    "horizon_s": 10.8,
+    "max_age_ms": 60,
+    "bad_span_ms": 40,
+    "confirm_span_ms": 100,
+    "max_hold_ms": 600,
+    "replan_transfer_s": 1.5,
+    "transport": "One simulation clock. 20ms captures. Constant 40ms delay in delay-40ms. Every third post-fault packet delayed 80ms in reordered. Gap suppresses delivery during [4.8,5.04); no catch-up. Stale-replay delivers the last pre-gap good packet until 5.2. gap-and-drop also opens the gripper during [4.8,5.04).",
+    "recovery": "Hold retains actuator targets; physics continues. Gate and path factors are independent. Receipt resumes on any valid received packet including stale/duplicate. Revalidate requires unique ordered post-hold captures, each accepted at age<60ms, bilateral contact, cube_z>0.12m, grasp_error<0.05m, capture span>=100ms and gaps<=20ms; latest packet is fresh at resume. Deadline600ms wins. Wallclock resumes original absolute-time schedule; replan regenerates transfer1.5s from current measured grip pose followed by original lower/release/retreat/settle. Latched never resumes.",
+    "hypothesis": "Factorial comparison of recovery evidence and remaining-path regeneration. Replanning includes retiming, not geometry alone.",
+    "scope": "30 deterministic cells; no randomization, clock skew, ROS2, vision, learned policy or regrasp. Hypothesis support is separate from artifact validity.",
+    "seed": null,
+    "variants": [
+      {
+        "gate_mode": "receipt",
+        "path_mode": "wallclock"
+      },
+      {
+        "gate_mode": "receipt",
+        "path_mode": "replan"
+      },
+      {
+        "gate_mode": "revalidate",
+        "path_mode": "wallclock"
+      },
+      {
+        "gate_mode": "revalidate",
+        "path_mode": "replan"
+      },
+      {
+        "gate_mode": "latched",
+        "path_mode": "wallclock"
+      }
+    ],
+    "acceptance": {
+      "prefix_abs_tolerance": 1e-10,
+      "replan_start_tolerance_m": 1e-09,
+      "first_target_error_max_m": 0.001,
+      "jump_ratio_max": 0.5
+    },
+    "hand_speed_definition": "Euclidean norm of 2ms finite difference of measured grip_center world position"
+  }
+}

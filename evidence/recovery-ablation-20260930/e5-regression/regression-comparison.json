@@ -1,0 +1,16 @@
+{
+  "episodes": 18,
+  "outcome_fields_equal": [
+    "condition",
+    "policy",
+    "success",
+    "state",
+    "holds",
+    "resumes",
+    "unsupported_resumes",
+    "first_hold_tick",
+    "first_resume_tick"
+  ],
+  "max_state_abs_error": 1.0884522450016476e-14,
+  "tolerance": 1e-10
+}

@@ -1,0 +1,1087 @@
+[
+  {
+    "type": "hold",
+    "tick": 2421,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2521,
+    "reason": "receipt",
+    "capture_tick": 2521,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2551,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2561,
+    "reason": "receipt",
+    "capture_tick": 2561,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2591,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2601,
+    "reason": "receipt",
+    "capture_tick": 2601,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2631,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2641,
+    "reason": "receipt",
+    "capture_tick": 2641,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2671,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2681,
+    "reason": "receipt",
+    "capture_tick": 2681,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2711,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2721,
+    "reason": "receipt",
+    "capture_tick": 2721,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2751,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2761,
+    "reason": "receipt",
+    "capture_tick": 2761,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2791,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2801,
+    "reason": "receipt",
+    "capture_tick": 2801,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2831,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2841,
+    "reason": "receipt",
+    "capture_tick": 2841,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2871,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2881,
+    "reason": "receipt",
+    "capture_tick": 2881,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2911,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2921,
+    "reason": "receipt",
+    "capture_tick": 2921,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2951,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 2961,
+    "reason": "receipt",
+    "capture_tick": 2961,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 2991,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3001,
+    "reason": "receipt",
+    "capture_tick": 3001,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3031,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3041,
+    "reason": "receipt",
+    "capture_tick": 3041,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3071,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3081,
+    "reason": "receipt",
+    "capture_tick": 3081,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3111,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3121,
+    "reason": "receipt",
+    "capture_tick": 3121,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3151,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3161,
+    "reason": "receipt",
+    "capture_tick": 3161,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3191,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3201,
+    "reason": "receipt",
+    "capture_tick": 3201,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3231,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3241,
+    "reason": "receipt",
+    "capture_tick": 3241,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3271,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3281,
+    "reason": "receipt",
+    "capture_tick": 3281,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3311,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3321,
+    "reason": "receipt",
+    "capture_tick": 3321,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3351,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3361,
+    "reason": "receipt",
+    "capture_tick": 3361,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3391,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3401,
+    "reason": "receipt",
+    "capture_tick": 3401,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3431,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3441,
+    "reason": "receipt",
+    "capture_tick": 3441,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3471,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3481,
+    "reason": "receipt",
+    "capture_tick": 3481,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3511,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3521,
+    "reason": "receipt",
+    "capture_tick": 3521,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3551,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3561,
+    "reason": "receipt",
+    "capture_tick": 3561,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3591,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3601,
+    "reason": "receipt",
+    "capture_tick": 3601,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3631,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3641,
+    "reason": "receipt",
+    "capture_tick": 3641,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3671,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3681,
+    "reason": "receipt",
+    "capture_tick": 3681,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3711,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3721,
+    "reason": "receipt",
+    "capture_tick": 3721,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3751,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3761,
+    "reason": "receipt",
+    "capture_tick": 3761,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3791,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3801,
+    "reason": "receipt",
+    "capture_tick": 3801,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3831,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3841,
+    "reason": "receipt",
+    "capture_tick": 3841,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3871,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3881,
+    "reason": "receipt",
+    "capture_tick": 3881,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3911,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3921,
+    "reason": "receipt",
+    "capture_tick": 3921,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3951,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 3961,
+    "reason": "receipt",
+    "capture_tick": 3961,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 3991,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4001,
+    "reason": "receipt",
+    "capture_tick": 4001,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4031,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4041,
+    "reason": "receipt",
+    "capture_tick": 4041,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4071,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4081,
+    "reason": "receipt",
+    "capture_tick": 4081,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4111,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4121,
+    "reason": "receipt",
+    "capture_tick": 4121,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4151,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4161,
+    "reason": "receipt",
+    "capture_tick": 4161,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4191,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4201,
+    "reason": "receipt",
+    "capture_tick": 4201,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4231,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4241,
+    "reason": "receipt",
+    "capture_tick": 4241,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4271,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4281,
+    "reason": "receipt",
+    "capture_tick": 4281,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4311,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4321,
+    "reason": "receipt",
+    "capture_tick": 4321,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4351,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4361,
+    "reason": "receipt",
+    "capture_tick": 4361,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4391,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4401,
+    "reason": "receipt",
+    "capture_tick": 4401,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4431,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4441,
+    "reason": "receipt",
+    "capture_tick": 4441,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4471,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4481,
+    "reason": "receipt",
+    "capture_tick": 4481,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4511,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4521,
+    "reason": "receipt",
+    "capture_tick": 4521,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4551,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4561,
+    "reason": "receipt",
+    "capture_tick": 4561,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4591,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4601,
+    "reason": "receipt",
+    "capture_tick": 4601,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4631,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4641,
+    "reason": "receipt",
+    "capture_tick": 4641,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4671,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4681,
+    "reason": "receipt",
+    "capture_tick": 4681,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4711,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4721,
+    "reason": "receipt",
+    "capture_tick": 4721,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4751,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4761,
+    "reason": "receipt",
+    "capture_tick": 4761,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4791,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4801,
+    "reason": "receipt",
+    "capture_tick": 4801,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4831,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4841,
+    "reason": "receipt",
+    "capture_tick": 4841,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4871,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4881,
+    "reason": "receipt",
+    "capture_tick": 4881,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4911,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4921,
+    "reason": "receipt",
+    "capture_tick": 4921,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4951,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 4961,
+    "reason": "receipt",
+    "capture_tick": 4961,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 4991,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5001,
+    "reason": "receipt",
+    "capture_tick": 5001,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5031,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5041,
+    "reason": "receipt",
+    "capture_tick": 5041,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5071,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5081,
+    "reason": "receipt",
+    "capture_tick": 5081,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5111,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5121,
+    "reason": "receipt",
+    "capture_tick": 5121,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5151,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5161,
+    "reason": "receipt",
+    "capture_tick": 5161,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5191,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5201,
+    "reason": "receipt",
+    "capture_tick": 5201,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5231,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5241,
+    "reason": "receipt",
+    "capture_tick": 5241,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5271,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5281,
+    "reason": "receipt",
+    "capture_tick": 5281,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5311,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5321,
+    "reason": "receipt",
+    "capture_tick": 5321,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5351,
+    "reason": "grasp"
+  },
+  {
+    "type": "resume",
+    "tick": 5361,
+    "reason": "receipt",
+    "capture_tick": 5361,
+    "age_ticks": 0,
+    "good": false,
+    "window_start": null,
+    "window_end": null
+  },
+  {
+    "type": "hold",
+    "tick": 5391,
+    "reason": "grasp"
+  }
+]

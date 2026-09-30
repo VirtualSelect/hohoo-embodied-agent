@@ -1,0 +1,17 @@
+[
+  {
+    "type": "hold",
+    "tick": 2421,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2651,
+    "reason": "post_hold_window",
+    "capture_tick": 2651,
+    "age_ticks": 0,
+    "good": true,
+    "window_start": 2601,
+    "window_end": 2651
+  }
+]

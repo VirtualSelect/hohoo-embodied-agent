@@ -1,0 +1,17 @@
+[
+  {
+    "type": "hold",
+    "tick": 2421,
+    "reason": "stale"
+  },
+  {
+    "type": "resume",
+    "tick": 2521,
+    "reason": "receipt",
+    "capture_tick": 2521,
+    "age_ticks": 0,
+    "good": true,
+    "window_start": null,
+    "window_end": null
+  }
+]

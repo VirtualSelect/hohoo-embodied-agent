@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-30T07:54:48.718199+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "gitCommit": "3b5d59dd24eff376325ee53348994b9ed87fb57d",
+  "dirty": true,
+  "sourceSha256": {
+    "experiments/vl01_recovery_gate/run.py": "77d9e6815bc7b98852bbc38dc237e4d62b6b1f5918ad7a8e688c7edb77bfadf0",
+    "experiments/vl01_recovery_gate/gate.py": "9991a1dcaca42ac55c1fb8e2287b2a7eff8306ba61d2e958f5d17e997d482919",
+    "experiments/vl01_recovery_gate/portable-audit.py": "b5801060ed48ae9bbd6da1b2b20446181af5fb9ba04597b2b6d28c538f26a8af",
+    "experiments/vl01_recovery_gate/test_gate.py": "484d8eb30fdb67065648b339d5acf909a0194e4bd6ac1d6e60da3f5b3f379f23",
+    "experiments/vl01_recovery_gate/render.py": "ba23c539af5ac6555ede3903ea2817a2ff2b7fd600a9b7a5c781ed4a915c99e9",
+    "experiments/vl01_recovery_gate/audit.py": "223e16d8617060b86d87024784cffc26d1b7078e538584ad1b6f6e7cdf17e323",
+    "experiments/vl01_recovery_gate/protocol.json": "9bb6f600843a06482b8be6cc6721371329a3685de74b854140af47d631ea46a5",
+    "experiments/vl01_grasp_guard/run.py": "57e809c223eac2ed1a7b58f47bd160f5525730732af8d29d544719decab90208",
+    "experiments/vl01_grasp_guard/protocol.json": "39d1030d334c38f4a027d280074db383abd9ee17ac72602188ca698730e6640f",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807"
+  },
+  "kind": "MuJoCo simulation; not real robot evidence",
+  "protocol": {
+    "version": 1,
+    "id": "E5-recovery-gate",
+    "dt_s": 0.002,
+    "period_ms": 20,
+    "conditions": [
+      "clean",
+      "delay-40ms",
+      "reordered",
+      "gap",
+      "stale-replay",
+      "gap-and-drop"
+    ],
+    "policies": [
+      "latched",
+      "receipt",
+      "revalidate"
+    ],
+    "repeats": 1,
+    "fault_start_s": 4.8,
+    "gap_end_s": 5.04,
+    "replay_end_s": 5.2,
+    "open_end_s": 5.04,
+    "horizon_s": 10.8,
+    "max_age_ms": 60,
+    "bad_span_ms": 40,
+    "confirm_span_ms": 100,
+    "max_hold_ms": 600,
+    "replan_transfer_s": 1.5,
+    "transport": "One simulation clock. 20ms captures. Constant 40ms delay in delay-40ms. Every third post-fault packet delayed 80ms in reordered. Gap suppresses delivery during [4.8,5.04); no catch-up. Stale-replay delivers the last pre-gap good packet until 5.2. gap-and-drop also opens the gripper during [4.8,5.04).",
+    "recovery": "Hold retains actuator targets, physics continues. Revalidate requires unique, ordered, post-hold captures, age <60ms, bilateral contact, cube_z >0.12m and cube-to-grip distance <0.05m, spanning100ms with gaps<=20ms. At600ms abort takes precedence. Replan from current measured grip pose to original transfer destination, followed by original lower/release/retreat/settle. Receipt baseline resumes the wall-clock trajectory after any valid packet, including stale/duplicate. Latched never resumes.",
+    "hypothesis": "New deliveries alone can produce unsafe resume decisions. Post-hold state evidence plus a new path can separate harmless communication gaps from lost grasps.",
+    "scope": "18 deterministic rollouts, one per cell. Privileged simulated observations, no learned policy, physical robot, real network or clock skew. Policies are bundles; differences do not isolate individual components. Synthetic fault schedules; no probabilistic success rate."
+  }
+}

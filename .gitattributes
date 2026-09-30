@@ -1,3 +1,6 @@
 /experiments/vl01_recovery_gate/** text eol=lf
 /evidence/recovery-20260930/** text eol=lf
 /evidence/recovery-20260930/*.png binary
+/experiments/vl01_recovery_ablation/** text eol=lf
+/evidence/recovery-ablation-20260930/** text eol=lf
+/evidence/recovery-ablation-20260930/**/*.png binary

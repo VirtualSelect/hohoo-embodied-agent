@@ -79,3 +79,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 观测恢复后的重新验收
 
 [第五轮](experiments/vl01_recovery_gate/README.md)完成18回合：延迟、乱序、通信间断与旧包重送。收到即恢复在旧包条件下9次恢复中有8次证据不足，却最终完成放置。新观测重新验收策略恢复有效抓取，掉落时保持停止；不实现重抓取。产物见 evidence/recovery-20260930。
+
+## 门控与路径分离
+
+[第六轮：恢复消融](experiments/vl01_recovery_ablation/README.md)将门控与重规划独立组合：30回合、另18回合E5回归，原始记录和独立审计完整归档。重规划降低首次目标跳变，但本矩阵没有观察到放置成功率提升；不能替代新鲜抓取证据。配套文章： https://huhohoo.com/docs/embodied-ai/mujoco-recovery-ablation 。

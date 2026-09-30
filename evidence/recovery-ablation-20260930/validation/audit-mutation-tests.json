@@ -1,0 +1,59 @@
+{
+  "passed": 11,
+  "checks": [
+    {
+      "test": "missing control row",
+      "passed": true,
+      "rejection": "clean-receipt-wallclock: clean-receipt-wallclock: control row count"
+    },
+    {
+      "test": "duplicate control tick",
+      "passed": true,
+      "rejection": "clean-receipt-wallclock: clean-receipt-wallclock: control tick sequence"
+    },
+    {
+      "test": "NaN velocity",
+      "passed": true,
+      "rejection": "clean-receipt-wallclock: control.csv:7.hand_speed: nonfinite value"
+    },
+    {
+      "test": "packet payload detached from capture",
+      "passed": true,
+      "rejection": "clean-receipt-wallclock: clean-receipt-wallclock:1: packet cube_z: 0.999 != 0.02596076"
+    },
+    {
+      "test": "mutually consistent but false success summaries",
+      "passed": true,
+      "rejection": "clean-receipt-wallclock: clean-receipt-wallclock: placement success differs from raw data"
+    },
+    {
+      "test": "false grasp hold evidence",
+      "passed": true,
+      "rejection": "gap-revalidate-replan: gap-revalidate-replan:2421: grasp reason masks stale evidence"
+    },
+    {
+      "test": "source hash mismatch",
+      "passed": true,
+      "rejection": "source hash mismatch: experiments/vl01_recovery_ablation/run.py"
+    },
+    {
+      "test": "missing matrix cell",
+      "passed": true,
+      "rejection": "expected exactly 30 episodes"
+    },
+    {
+      "test": "invalid confirmation claim is a reported hypothesis failure",
+      "passed": true
+    },
+    {
+      "test": "bad replan origin is a reported hypothesis failure",
+      "passed": true
+    },
+    {
+      "test": "restored raw data passes without trusting derived outputs",
+      "passed": true
+    }
+  ],
+  "original_evidence_untouched": true,
+  "temporary_copy": "/tmp/e6-audit-mutations-3mlxqxrc/evidence"
+}
