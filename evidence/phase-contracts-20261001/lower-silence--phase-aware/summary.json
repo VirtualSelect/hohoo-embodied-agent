@@ -1,0 +1,19 @@
+{
+  "condition": "lower-silence",
+  "policy": "phase-aware",
+  "stopped": true,
+  "first_stop": {
+    "type": "stop",
+    "tick": 2821,
+    "phase": "lower",
+    "reason": "stale",
+    "age_ticks": 30,
+    "bad_since": null
+  },
+  "placement": false,
+  "entered_release": false,
+  "max_cube_z_m": 0.1745031855496392,
+  "ignored_packets": 0,
+  "warnings": {},
+  "simulated_seconds": 9.199999999999742
+}

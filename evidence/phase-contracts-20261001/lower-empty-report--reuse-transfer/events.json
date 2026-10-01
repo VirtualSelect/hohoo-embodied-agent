@@ -1,0 +1,10 @@
+[
+  {
+    "type": "stop",
+    "tick": 3001,
+    "phase": "lower",
+    "reason": "grasp",
+    "age_ticks": 0,
+    "bad_since": 2981
+  }
+]

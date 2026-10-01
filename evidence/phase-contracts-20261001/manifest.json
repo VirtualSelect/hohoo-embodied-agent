@@ -1,0 +1,146 @@
+{
+  "startedAt": "2026-10-01T13:57:32.743783+00:00",
+  "kind": "MuJoCo simulation; not physical robot evidence",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "commit": "a9eeac5491f2f18f1db14e233d0ee201810c33b8",
+  "dirtyBeforeOutput": false,
+  "protocol": {
+    "id": "E7-phase-contracts-v1",
+    "version": 1,
+    "question": "Does extending transfer monitoring into lowering require a different grasp contract?",
+    "dt_s": 0.002,
+    "capture_every_ticks": 10,
+    "horizon_s": 9.2,
+    "max_age_ticks": 30,
+    "bad_span_ticks": 20,
+    "min_transfer_height_m": 0.12,
+    "max_grasp_error_m": 0.05,
+    "policies": [
+      "transfer-only",
+      "reuse-transfer",
+      "phase-aware"
+    ],
+    "conditions": [
+      {
+        "id": "clean",
+        "kind": "none",
+        "start_s": null,
+        "duration_s": 0
+      },
+      {
+        "id": "transfer-drop",
+        "kind": "open",
+        "start_s": 4.8,
+        "duration_s": 0.24
+      },
+      {
+        "id": "lower-drop-early",
+        "kind": "open",
+        "start_s": 5.6,
+        "duration_s": 0.24
+      },
+      {
+        "id": "lower-drop-late",
+        "kind": "open",
+        "start_s": 6.2,
+        "duration_s": 0.24
+      },
+      {
+        "id": "lower-silence",
+        "kind": "silence",
+        "start_s": 5.6,
+        "duration_s": 0.24
+      },
+      {
+        "id": "lower-replay",
+        "kind": "replay",
+        "start_s": 5.6,
+        "duration_s": 0.24
+      },
+      {
+        "id": "lower-empty-report",
+        "kind": "empty",
+        "start_s": 5.6,
+        "duration_s": 0.02
+      }
+    ],
+    "schedule_s": {
+      "transfer": [
+        4.0,
+        5.5
+      ],
+      "lower": [
+        5.5,
+        6.5
+      ],
+      "release": [
+        6.5,
+        7.2
+      ]
+    },
+    "contract": {
+      "transfer-only": "Monitor transfer: bilateral contact, cube_z > 0.12m, grasp_error < 0.05m; age < 60ms.",
+      "reuse-transfer": "Use the same transfer predicate and age limit in transfer AND lower.",
+      "phase-aware": "Transfer predicate unchanged; lower requires bilateral contact and grasp_error < 0.05m, without the lift-height requirement. Age limit unchanged.",
+      "release": "All policies stop grasp monitoring at commanded release; successful placement is checked independently from physical logs. Release safety is not certified.",
+      "stop": "Bad captures spanning >=40ms or capture age >=60ms latch target hold. Decision is after the physics step; held actuator target applies at the next tick. No resume, replan or recovery budget in this experiment."
+    },
+    "design": "21 deterministic cells: seven conditions x three policies, one rollout per cell. Same initial state and absolute simulation schedule. No randomized success-rate estimate.",
+    "hypotheses": [
+      "A transfer height predicate may falsely stop normal lowering.",
+      "Removing only the lower-stage height requirement may permit normal lowering while retaining contact/error/age monitoring.",
+      "An uncontrolled drop over the tray may satisfy final placement without establishing a correctly monitored execution."
+    ],
+    "metrics": [
+      "first stop tick/reason",
+      "fault-to-stop latency where a stop follows fault onset",
+      "final placement",
+      "entered commanded release",
+      "maximum lift",
+      "same-condition pre-decision state prefixes"
+    ],
+    "placement": {
+      "settle_window_s": 0.5,
+      "lift_z_gt_m": 0.1,
+      "center_xy_m": [
+        0.24,
+        0.12
+      ],
+      "xy_each_lt_m": 0.045,
+      "rest_z_m": 0.026,
+      "z_error_lt_m": 0.006,
+      "speed_lt_m_s": 0.02,
+      "no_finger_contact": true
+    },
+    "prefix_tolerance": 1e-10,
+    "scope": "Privileged MuJoCo contact/state observations, one clock, fixed phases. No camera, ROS2, learned policy, physical robot, regrasp, or full-task safety guarantee. Hypothesis support is separate from artifact validity.",
+    "seed": null
+  },
+  "sourceSha256": {
+    "experiments/vl01_phase_contracts/audit.py": "580b75b667edeb5bb9e4ceca077d651c12450b163b40af579afc451f208f0835",
+    "experiments/vl01_phase_contracts/monitor.py": "c66d5ae93327a587bc9a6d88e38ae38b44370dc52e51023ab2d15a2bef161d15",
+    "experiments/vl01_phase_contracts/plot.py": "02d35e73819679c9fc721a07d841d5490e93333d1f00a7f944a4119ccfd39102",
+    "experiments/vl01_phase_contracts/run.py": "2d335ffd7a6afa2d133a284b49494140974b5236ce80c6a3c9801ae72152e292",
+    "experiments/vl01_phase_contracts/test_audit.py": "315f7abbf5c9d6209c2fe8eda8443911b1fb256eacb561c17bc03970064a2f17",
+    "experiments/vl01_phase_contracts/test_monitor.py": "42161403ee073f8a3a835668b7aee8e027b85d30b6f1372d99a1fc32e9a5c427",
+    "experiments/vl01_phase_contracts/protocol.json": "ede23d7a102ae7679f0c4bf1ffa2b556ae9d56465fc1373aa60451d31557add6",
+    "experiments/vl01_pick_place/run.py": "b1cb1a7e9d852524f5fea17a02d59c66b5e8a48e368db09e1d96104b557da79a",
+    "experiments/vl01_pick_place/protocol.json": "22fdfa09a6cf54be40c5f9e7f8577cf182e029e03660ca11b65b9628a17daa74",
+    "experiments/vl01_pick_place/scene.xml": "d41521261d007eadbfacd3966149635420ec3a1a3e0dab17de90cf725885dcd6"
+  },
+  "sourceLfSha256": {
+    "experiments/vl01_phase_contracts/audit.py": "580b75b667edeb5bb9e4ceca077d651c12450b163b40af579afc451f208f0835",
+    "experiments/vl01_phase_contracts/monitor.py": "c66d5ae93327a587bc9a6d88e38ae38b44370dc52e51023ab2d15a2bef161d15",
+    "experiments/vl01_phase_contracts/plot.py": "02d35e73819679c9fc721a07d841d5490e93333d1f00a7f944a4119ccfd39102",
+    "experiments/vl01_phase_contracts/run.py": "2d335ffd7a6afa2d133a284b49494140974b5236ce80c6a3c9801ae72152e292",
+    "experiments/vl01_phase_contracts/test_audit.py": "315f7abbf5c9d6209c2fe8eda8443911b1fb256eacb561c17bc03970064a2f17",
+    "experiments/vl01_phase_contracts/test_monitor.py": "42161403ee073f8a3a835668b7aee8e027b85d30b6f1372d99a1fc32e9a5c427",
+    "experiments/vl01_phase_contracts/protocol.json": "ede23d7a102ae7679f0c4bf1ffa2b556ae9d56465fc1373aa60451d31557add6",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807"
+  }
+}

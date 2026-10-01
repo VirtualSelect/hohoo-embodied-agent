@@ -1,0 +1,19 @@
+{
+  "condition": "transfer-drop",
+  "policy": "reuse-transfer",
+  "stopped": true,
+  "first_stop": {
+    "type": "stop",
+    "tick": 2421,
+    "phase": "transfer",
+    "reason": "grasp",
+    "age_ticks": 0,
+    "bad_since": 2401
+  },
+  "placement": false,
+  "entered_release": false,
+  "max_cube_z_m": 0.1745031855496392,
+  "ignored_packets": 0,
+  "warnings": {},
+  "simulated_seconds": 9.199999999999742
+}

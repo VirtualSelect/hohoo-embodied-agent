@@ -1,0 +1,564 @@
+{
+  "artifact_valid": true,
+  "cells": 21,
+  "raw_files": 105,
+  "source_files": 10,
+  "prefix_pairs": [
+    {
+      "condition": "clean",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 3001,
+      "state_samples": 301
+    },
+    {
+      "condition": "clean",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 4600,
+      "state_samples": 460
+    },
+    {
+      "condition": "clean",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 3001,
+      "state_samples": 301
+    },
+    {
+      "condition": "transfer-drop",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 2421,
+      "state_samples": 243
+    },
+    {
+      "condition": "transfer-drop",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2421,
+      "state_samples": 243
+    },
+    {
+      "condition": "transfer-drop",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2421,
+      "state_samples": 243
+    },
+    {
+      "condition": "lower-drop-early",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-drop-early",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-drop-early",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-drop-late",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 3001,
+      "state_samples": 301
+    },
+    {
+      "condition": "lower-drop-late",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 3121,
+      "state_samples": 313
+    },
+    {
+      "condition": "lower-drop-late",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 3001,
+      "state_samples": 301
+    },
+    {
+      "condition": "lower-silence",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-silence",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-silence",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-replay",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-replay",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-replay",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 2821,
+      "state_samples": 283
+    },
+    {
+      "condition": "lower-empty-report",
+      "policies": [
+        "transfer-only",
+        "reuse-transfer"
+      ],
+      "through_decision_tick": 3001,
+      "state_samples": 301
+    },
+    {
+      "condition": "lower-empty-report",
+      "policies": [
+        "transfer-only",
+        "phase-aware"
+      ],
+      "through_decision_tick": 4600,
+      "state_samples": 460
+    },
+    {
+      "condition": "lower-empty-report",
+      "policies": [
+        "reuse-transfer",
+        "phase-aware"
+      ],
+      "through_decision_tick": 3001,
+      "state_samples": 301
+    }
+  ],
+  "metrics": [
+    {
+      "condition": "clean",
+      "policy": "transfer-only",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "clean",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 3001,
+        "phase": "lower",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2981
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "clean",
+      "policy": "phase-aware",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "transfer-drop",
+      "policy": "transfer-only",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2421,
+        "phase": "transfer",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2401
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "transfer-drop",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2421,
+        "phase": "transfer",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2401
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "transfer-drop",
+      "policy": "phase-aware",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2421,
+        "phase": "transfer",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2401
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-drop-early",
+      "policy": "transfer-only",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "lower-drop-early",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2821,
+        "phase": "lower",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2801
+      },
+      "placement": true,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-drop-early",
+      "policy": "phase-aware",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2821,
+        "phase": "lower",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2801
+      },
+      "placement": true,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-drop-late",
+      "policy": "transfer-only",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "lower-drop-late",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 3001,
+        "phase": "lower",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2981
+      },
+      "placement": true,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "lower-drop-late",
+      "policy": "phase-aware",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 3121,
+        "phase": "lower",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 3101
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-silence",
+      "policy": "transfer-only",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "lower-silence",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2821,
+        "phase": "lower",
+        "reason": "stale",
+        "age_ticks": 30,
+        "bad_since": null
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-silence",
+      "policy": "phase-aware",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2821,
+        "phase": "lower",
+        "reason": "stale",
+        "age_ticks": 30,
+        "bad_since": null
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-replay",
+      "policy": "transfer-only",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 12,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "lower-replay",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2821,
+        "phase": "lower",
+        "reason": "stale",
+        "age_ticks": 30,
+        "bad_since": null
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 12,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-replay",
+      "policy": "phase-aware",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 2821,
+        "phase": "lower",
+        "reason": "stale",
+        "age_ticks": 30,
+        "bad_since": null
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 12,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 40.0
+    },
+    {
+      "condition": "lower-empty-report",
+      "policy": "transfer-only",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    },
+    {
+      "condition": "lower-empty-report",
+      "policy": "reuse-transfer",
+      "stopped": true,
+      "first_stop": {
+        "type": "stop",
+        "tick": 3001,
+        "phase": "lower",
+        "reason": "grasp",
+        "age_ticks": 0,
+        "bad_since": 2981
+      },
+      "placement": false,
+      "entered_release": false,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": 400.0
+    },
+    {
+      "condition": "lower-empty-report",
+      "policy": "phase-aware",
+      "stopped": false,
+      "first_stop": null,
+      "placement": true,
+      "entered_release": true,
+      "max_cube_z_m": 0.1745031855496392,
+      "ignored_packets": 0,
+      "warnings": {},
+      "simulated_seconds": 9.199999999999742,
+      "fault_to_stop_ms": null
+    }
+  ],
+  "limits": "Recorded-state audit, not a contact-force recomputation. Deterministic single rollouts, not population success rates."
+}

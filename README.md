@@ -83,3 +83,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 门控与路径分离
 
 [第六轮：恢复消融](experiments/vl01_recovery_ablation/README.md)将门控与重规划独立组合：30回合、另18回合E5回归，原始记录和独立审计完整归档。重规划降低首次目标跳变，但本矩阵没有观察到放置成功率提升；不能替代新鲜抓取证据。配套文章： https://huhohoo.com/docs/embodied-ai/mujoco-recovery-ablation 。
+
+## 下降阶段的抓取契约
+
+[第七轮：阶段监测](experiments/vl01_phase_contracts/README.md)完成21回合。照搬搬运高度规则会误停正常下降；按阶段检查能检出下降故障，但保持目标仍可能留下手指接触，最终未通过放置。完整矩阵、原始日志、图表与独立审计见[evidence/phase-contracts-20261001](evidence/phase-contracts-20261001/RESULTS.md)。

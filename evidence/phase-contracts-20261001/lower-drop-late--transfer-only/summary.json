@@ -1,0 +1,12 @@
+{
+  "condition": "lower-drop-late",
+  "policy": "transfer-only",
+  "stopped": false,
+  "first_stop": null,
+  "placement": true,
+  "entered_release": true,
+  "max_cube_z_m": 0.1745031855496392,
+  "ignored_packets": 0,
+  "warnings": {},
+  "simulated_seconds": 9.199999999999742
+}
