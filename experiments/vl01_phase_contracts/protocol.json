@@ -1,0 +1,41 @@
+{
+  "id": "E7-phase-contracts-v1",
+  "version": 1,
+  "question": "Does extending transfer monitoring into lowering require a different grasp contract?",
+  "dt_s": 0.002,
+  "capture_every_ticks": 10,
+  "horizon_s": 9.2,
+  "max_age_ticks": 30,
+  "bad_span_ticks": 20,
+  "min_transfer_height_m": 0.12,
+  "max_grasp_error_m": 0.05,
+  "policies": ["transfer-only", "reuse-transfer", "phase-aware"],
+  "conditions": [
+    {"id": "clean", "kind": "none", "start_s": null, "duration_s": 0},
+    {"id": "transfer-drop", "kind": "open", "start_s": 4.8, "duration_s": 0.24},
+    {"id": "lower-drop-early", "kind": "open", "start_s": 5.6, "duration_s": 0.24},
+    {"id": "lower-drop-late", "kind": "open", "start_s": 6.2, "duration_s": 0.24},
+    {"id": "lower-silence", "kind": "silence", "start_s": 5.6, "duration_s": 0.24},
+    {"id": "lower-replay", "kind": "replay", "start_s": 5.6, "duration_s": 0.24},
+    {"id": "lower-empty-report", "kind": "empty", "start_s": 5.6, "duration_s": 0.02}
+  ],
+  "schedule_s": {"transfer": [4.0, 5.5], "lower": [5.5, 6.5], "release": [6.5, 7.2]},
+  "contract": {
+    "transfer-only": "Monitor transfer: bilateral contact, cube_z > 0.12m, grasp_error < 0.05m; age < 60ms.",
+    "reuse-transfer": "Use the same transfer predicate and age limit in transfer AND lower.",
+    "phase-aware": "Transfer predicate unchanged; lower requires bilateral contact and grasp_error < 0.05m, without the lift-height requirement. Age limit unchanged.",
+    "release": "All policies stop grasp monitoring at commanded release; successful placement is checked independently from physical logs. Release safety is not certified.",
+    "stop": "Bad captures spanning >=40ms or capture age >=60ms latch target hold. Decision is after the physics step; held actuator target applies at the next tick. No resume, replan or recovery budget in this experiment."
+  },
+  "design": "21 deterministic cells: seven conditions x three policies, one rollout per cell. Same initial state and absolute simulation schedule. No randomized success-rate estimate.",
+  "hypotheses": [
+    "A transfer height predicate may falsely stop normal lowering.",
+    "Removing only the lower-stage height requirement may permit normal lowering while retaining contact/error/age monitoring.",
+    "An uncontrolled drop over the tray may satisfy final placement without establishing a correctly monitored execution."
+  ],
+  "metrics": ["first stop tick/reason", "fault-to-stop latency where a stop follows fault onset", "final placement", "entered commanded release", "maximum lift", "same-condition pre-decision state prefixes"],
+  "placement": {"settle_window_s": 0.5, "lift_z_gt_m": 0.1, "center_xy_m": [0.24, 0.12], "xy_each_lt_m": 0.045, "rest_z_m": 0.026, "z_error_lt_m": 0.006, "speed_lt_m_s": 0.02, "no_finger_contact": true},
+  "prefix_tolerance": 1e-10,
+  "scope": "Privileged MuJoCo contact/state observations, one clock, fixed phases. No camera, ROS2, learned policy, physical robot, regrasp, or full-task safety guarantee. Hypothesis support is separate from artifact validity.",
+  "seed": null
+}
