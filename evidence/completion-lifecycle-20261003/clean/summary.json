@@ -1,0 +1,34 @@
+{
+  "condition": "clean",
+  "completed_at": 3551,
+  "latched": 3551,
+  "final_state": "VALID",
+  "final_placement": true,
+  "warnings": {},
+  "events": [
+    {
+      "tick": 3251,
+      "from_state": "NOT_READY",
+      "to_state": "UNKNOWN",
+      "reason": "no-fresh-evidence"
+    },
+    {
+      "tick": 3251,
+      "from_state": "UNKNOWN",
+      "to_state": "INVALID",
+      "reason": "fresh-violation"
+    },
+    {
+      "tick": 3421,
+      "from_state": "INVALID",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 3551,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    }
+  ]
+}

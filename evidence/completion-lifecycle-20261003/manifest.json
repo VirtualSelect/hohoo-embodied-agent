@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-03T07:21:44.118576+00:00",
+  "python": "3.12.14",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "protocol": {
+    "study": "E11",
+    "dt_s": 0.002,
+    "horizon_s": 12,
+    "capture_every_ticks": 10,
+    "span_ticks": 125,
+    "age_ticks": 30,
+    "conditions": [
+      "clean",
+      "push",
+      "silence",
+      "stale-replay",
+      "false-bad",
+      "false-good-after-push",
+      "boundary-gap"
+    ],
+    "push": {
+      "start_s": 8,
+      "end_s": 8.08,
+      "force_x_n": 1
+    },
+    "silence_s": [
+      8,
+      8.4
+    ],
+    "false_bad_tick": 4001,
+    "false_good_tick": 4101,
+    "boundary_drop_ticks": [
+      4001,
+      4011
+    ],
+    "design": "One physical rollout per condition, two observers on the same packets; no feedback or safety claim."
+  },
+  "commit": "d321641afcceaea218fe04b66b358bef4413f6bf",
+  "dirtyBeforeRun": false,
+  "sources": {
+    "experiments/vl01_completion_lifecycle/audit.py": "65f20f29564f9db68cb4ba5a57ebc3c7667a25b71fa30e3ef8d241fc37b40b1d",
+    "experiments/vl01_completion_lifecycle/lifecycle.py": "7625ecc90d2d304963d5083abecfcd4698350cb50a0ab780c2f9cc23ab56e844",
+    "experiments/vl01_completion_lifecycle/run.py": "c3d6ad0b3667ceaf45af52ca4df8f15feb50e421dc6e391354eaf833a3db0b96",
+    "experiments/vl01_completion_lifecycle/test_audit.py": "f4d7358e91097f7ff36885975d128dfad7b4f0e1911898902ee1431f93da49fd",
+    "experiments/vl01_completion_lifecycle/test_lifecycle.py": "85cedccaecf9b4059d69f19341cc40246ce4c5f55fef79aba3af9fe7097c28eb",
+    "experiments/vl01_completion_lifecycle/protocol.json": "908ff7b3943e2840d9faae6f03d76008a20ffadb938e24daf3f8faae699cf647",
+    "experiments/vl01_exit_release_budget/run.py": "0b11569eb4e7cc14e9144bbc802d935001eff56af0b1a498adca8cb7cec98bcd",
+    "experiments/vl01_exit_release_budget/contracts.py": "287f879eb146edc43fef0ad51ad12393e8af41248c62b1eddb38c2d9ae5f28f1",
+    "experiments/vl01_exit_release_budget/protocol.json": "284b6163a4788bfce6ea65d57ccd937b2d9c0746989714c64465ec60d0e097cc",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807",
+    "experiments/vl01_phase_contracts/monitor.py": "c66d5ae93327a587bc9a6d88e38ae38b44370dc52e51023ab2d15a2bef161d15",
+    "experiments/vl01_recovery_gate/gate.py": "9991a1dcaca42ac55c1fb8e2287b2a7eff8306ba61d2e958f5d17e997d482919"
+  }
+}

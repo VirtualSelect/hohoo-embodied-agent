@@ -1,0 +1,50 @@
+{
+  "valid": true,
+  "episodes": 7,
+  "raw_files": 21,
+  "same_physics_pairs": 5,
+  "checks": [
+    {
+      "condition": "clean",
+      "first": 3551,
+      "final": "VALID",
+      "placement": true
+    },
+    {
+      "condition": "push",
+      "first": 3551,
+      "final": "INVALID",
+      "placement": false
+    },
+    {
+      "condition": "silence",
+      "first": 3551,
+      "final": "VALID",
+      "placement": true
+    },
+    {
+      "condition": "stale-replay",
+      "first": 3551,
+      "final": "VALID",
+      "placement": true
+    },
+    {
+      "condition": "false-bad",
+      "first": 3551,
+      "final": "VALID",
+      "placement": true
+    },
+    {
+      "condition": "false-good-after-push",
+      "first": 3551,
+      "final": "INVALID",
+      "placement": false
+    },
+    {
+      "condition": "boundary-gap",
+      "first": 3551,
+      "final": "VALID",
+      "placement": true
+    }
+  ]
+}
