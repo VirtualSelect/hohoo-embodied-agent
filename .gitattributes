@@ -12,3 +12,6 @@ experiments/vl01_exit_release_budget/** text eol=lf
 evidence/exit-release-budget-20261003/** text eol=lf
 *.gz binary
 *.png binary
+
+experiments/vl01_completion_lifecycle/** text eol=lf
+evidence/completion-lifecycle-20261003/** -text

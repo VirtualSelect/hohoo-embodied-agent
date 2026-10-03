@@ -1,0 +1,33 @@
+{
+  "study": "E11",
+  "dt_s": 0.002,
+  "horizon_s": 12,
+  "capture_every_ticks": 10,
+  "span_ticks": 125,
+  "age_ticks": 30,
+  "conditions": [
+    "clean",
+    "push",
+    "silence",
+    "stale-replay",
+    "false-bad",
+    "false-good-after-push",
+    "boundary-gap"
+  ],
+  "push": {
+    "start_s": 8,
+    "end_s": 8.08,
+    "force_x_n": 1
+  },
+  "silence_s": [
+    8,
+    8.4
+  ],
+  "false_bad_tick": 4001,
+  "false_good_tick": 4101,
+  "boundary_drop_ticks": [
+    4001,
+    4011
+  ],
+  "design": "One physical rollout per condition, two observers on the same packets; no feedback or safety claim."
+}
