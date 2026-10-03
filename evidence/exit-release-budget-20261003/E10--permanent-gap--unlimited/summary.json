@@ -1,0 +1,27 @@
+{
+  "study": "E10",
+  "condition": "permanent-gap",
+  "policy": "unlimited",
+  "placement": false,
+  "warnings": {},
+  "first_stop": 2171,
+  "state": "aborted",
+  "resumes": 0,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.16547680875792609,
+  "final_contacts": "left_pad|right_pad",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2171,
+      "reason": "stale"
+    },
+    {
+      "type": "abort",
+      "tick": 2571,
+      "reason": "revalidation_deadline"
+    }
+  ]
+}

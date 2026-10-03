@@ -1,0 +1,16 @@
+{
+  "study": "E9",
+  "condition": "stuck-closed",
+  "policy": "observe",
+  "placement": false,
+  "warnings": {},
+  "first_stop": null,
+  "state": "observing",
+  "resumes": 0,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.1854767704408395,
+  "final_contacts": "left_pad|right_pad",
+  "max_cube_z": 0.18963864095593339,
+  "events": []
+}

@@ -1,0 +1,25 @@
+{
+  "study": "E8",
+  "condition": "transfer-drop",
+  "policy": "open-retreat",
+  "placement": false,
+  "warnings": {},
+  "first_stop": 2421,
+  "state": "stopped",
+  "resumes": 0,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.019990019857682853,
+  "final_contacts": "floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "stop",
+      "tick": 2421,
+      "phase": "transfer",
+      "reason": "grasp",
+      "age_ticks": 0,
+      "bad_since": 2401
+    }
+  ]
+}

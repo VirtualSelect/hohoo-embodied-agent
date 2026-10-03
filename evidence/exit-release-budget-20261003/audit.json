@@ -1,0 +1,266 @@
+{
+  "valid": true,
+  "episodes": 32,
+  "raw_files": 96,
+  "source_files": 11,
+  "e8_prefix_pairs": 15,
+  "checks": [
+    {
+      "study": "E8",
+      "condition": "clean",
+      "policy": "hold",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "clean",
+      "policy": "open",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "clean",
+      "policy": "open-retreat",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "transfer-drop",
+      "policy": "hold",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E8",
+      "condition": "transfer-drop",
+      "policy": "open",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E8",
+      "condition": "transfer-drop",
+      "policy": "open-retreat",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E8",
+      "condition": "lower-drop-early",
+      "policy": "hold",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "lower-drop-early",
+      "policy": "open",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "lower-drop-early",
+      "policy": "open-retreat",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "lower-drop-late",
+      "policy": "hold",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E8",
+      "condition": "lower-drop-late",
+      "policy": "open",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "lower-drop-late",
+      "policy": "open-retreat",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "lower-silence",
+      "policy": "hold",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E8",
+      "condition": "lower-silence",
+      "policy": "open",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E8",
+      "condition": "lower-silence",
+      "policy": "open-retreat",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E9",
+      "condition": "clean",
+      "policy": "observe",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E9",
+      "condition": "stuck-closed",
+      "policy": "observe",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E9",
+      "condition": "delayed-open",
+      "policy": "observe",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E9",
+      "condition": "false-good-report",
+      "policy": "observe",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E9",
+      "condition": "post-release-push",
+      "policy": "observe",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E10",
+      "condition": "clean",
+      "policy": "unlimited",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "clean",
+      "policy": "budget-two",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "clean",
+      "policy": "budget-two-cooldown",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "single-gap",
+      "policy": "unlimited",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "single-gap",
+      "policy": "budget-two",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "single-gap",
+      "policy": "budget-two-cooldown",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "repeated-gap",
+      "policy": "unlimited",
+      "rows": 6000,
+      "states": 600,
+      "placement": true
+    },
+    {
+      "study": "E10",
+      "condition": "repeated-gap",
+      "policy": "budget-two",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E10",
+      "condition": "repeated-gap",
+      "policy": "budget-two-cooldown",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E10",
+      "condition": "permanent-gap",
+      "policy": "unlimited",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E10",
+      "condition": "permanent-gap",
+      "policy": "budget-two",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    },
+    {
+      "study": "E10",
+      "condition": "permanent-gap",
+      "policy": "budget-two-cooldown",
+      "rows": 6000,
+      "states": 600,
+      "placement": false
+    }
+  ],
+  "limitations": "Checks recorded physics projections, E8 decisions/exit targets, E9 completion and E10 resume evidence/budgets. Does not recompute contact forces or establish hardware safety."
+}

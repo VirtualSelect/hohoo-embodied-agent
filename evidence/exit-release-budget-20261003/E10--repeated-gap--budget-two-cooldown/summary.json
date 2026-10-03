@@ -1,0 +1,57 @@
+{
+  "study": "E10",
+  "condition": "repeated-gap",
+  "policy": "budget-two-cooldown",
+  "placement": false,
+  "warnings": {},
+  "first_stop": 2171,
+  "state": "aborted",
+  "resumes": 2,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.16499966314014414,
+  "final_contacts": "left_pad|right_pad",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2171,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2371,
+      "reason": "post_hold_window",
+      "capture_tick": 2361,
+      "age_ticks": 10,
+      "good": true,
+      "window_start": 2221,
+      "window_end": 2361
+    },
+    {
+      "type": "hold",
+      "tick": 2391,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2591,
+      "reason": "post_hold_window",
+      "capture_tick": 2581,
+      "age_ticks": 10,
+      "good": true,
+      "window_start": 2441,
+      "window_end": 2581
+    },
+    {
+      "type": "hold",
+      "tick": 2611,
+      "reason": "stale"
+    },
+    {
+      "type": "abort",
+      "tick": 2711,
+      "reason": "budget"
+    }
+  ]
+}

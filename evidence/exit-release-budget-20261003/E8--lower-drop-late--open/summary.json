@@ -1,0 +1,25 @@
+{
+  "study": "E8",
+  "condition": "lower-drop-late",
+  "policy": "open",
+  "placement": true,
+  "warnings": {},
+  "first_stop": 3121,
+  "state": "stopped",
+  "resumes": 0,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.025980039715365635,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "stop",
+      "tick": 3121,
+      "phase": "lower",
+      "reason": "grasp",
+      "age_ticks": 0,
+      "bad_since": 3101
+    }
+  ]
+}

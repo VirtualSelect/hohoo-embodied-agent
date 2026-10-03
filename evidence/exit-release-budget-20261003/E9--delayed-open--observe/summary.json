@@ -1,0 +1,16 @@
+{
+  "study": "E9",
+  "condition": "delayed-open",
+  "policy": "observe",
+  "placement": true,
+  "warnings": {},
+  "first_stop": null,
+  "state": "observing",
+  "resumes": 0,
+  "single_completion": 3521,
+  "window_completion": 3651,
+  "final_cube_z": 0.025980039715365628,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": []
+}

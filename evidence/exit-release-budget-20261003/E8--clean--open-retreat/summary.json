@@ -1,0 +1,16 @@
+{
+  "study": "E8",
+  "condition": "clean",
+  "policy": "open-retreat",
+  "placement": true,
+  "warnings": {},
+  "first_stop": null,
+  "state": "running",
+  "resumes": 0,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.025980039715365624,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": []
+}

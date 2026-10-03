@@ -1,0 +1,107 @@
+{
+  "study": "E10",
+  "condition": "repeated-gap",
+  "policy": "unlimited",
+  "placement": true,
+  "warnings": {},
+  "first_stop": 2171,
+  "state": "running",
+  "resumes": 6,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.025980039715365624,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2171,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2271,
+      "reason": "post_hold_window",
+      "capture_tick": 2271,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2221,
+      "window_end": 2271
+    },
+    {
+      "type": "hold",
+      "tick": 2391,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2491,
+      "reason": "post_hold_window",
+      "capture_tick": 2491,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2441,
+      "window_end": 2491
+    },
+    {
+      "type": "hold",
+      "tick": 2611,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2711,
+      "reason": "post_hold_window",
+      "capture_tick": 2711,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2661,
+      "window_end": 2711
+    },
+    {
+      "type": "hold",
+      "tick": 2831,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2931,
+      "reason": "post_hold_window",
+      "capture_tick": 2931,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2881,
+      "window_end": 2931
+    },
+    {
+      "type": "hold",
+      "tick": 3051,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 3151,
+      "reason": "post_hold_window",
+      "capture_tick": 3151,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 3101,
+      "window_end": 3151
+    },
+    {
+      "type": "hold",
+      "tick": 3271,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 3371,
+      "reason": "post_hold_window",
+      "capture_tick": 3371,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 3321,
+      "window_end": 3371
+    }
+  ]
+}

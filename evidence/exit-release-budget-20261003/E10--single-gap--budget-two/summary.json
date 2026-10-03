@@ -1,0 +1,32 @@
+{
+  "study": "E10",
+  "condition": "single-gap",
+  "policy": "budget-two",
+  "placement": true,
+  "warnings": {},
+  "first_stop": 2321,
+  "state": "running",
+  "resumes": 1,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.025980039715365635,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2321,
+      "reason": "stale"
+    },
+    {
+      "type": "resume",
+      "tick": 2471,
+      "reason": "post_hold_window",
+      "capture_tick": 2471,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2421,
+      "window_end": 2471
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "study": "E8",
+  "condition": "lower-silence",
+  "policy": "hold",
+  "placement": false,
+  "warnings": {},
+  "first_stop": 2821,
+  "state": "stopped",
+  "resumes": 0,
+  "single_completion": null,
+  "window_completion": null,
+  "final_cube_z": 0.1578096204273466,
+  "final_contacts": "left_pad|right_pad",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "stop",
+      "tick": 2821,
+      "phase": "lower",
+      "reason": "stale",
+      "age_ticks": 30,
+      "bad_since": null
+    }
+  ]
+}

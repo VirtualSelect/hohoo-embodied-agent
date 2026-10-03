@@ -87,3 +87,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 下降阶段的抓取契约
 
 [第七轮：阶段监测](experiments/vl01_phase_contracts/README.md)完成21回合。照搬搬运高度规则会误停正常下降；按阶段检查能检出下降故障，但保持目标仍可能留下手指接触，最终未通过放置。完整矩阵、原始日志、图表与独立审计见[evidence/phase-contracts-20261001](evidence/phase-contracts-20261001/RESULTS.md)。
+
+## 2026-10-03 / E8–E10
+
+[退出动作、释放验收与恢复预算](experiments/vl01_exit_release_budget/README.md)完成32回合，保留96份压缩控制/物理状态/摘要文件与独立审计。E8晚下降松爪消除残留接触，但搬运掉落仍失败；E9持续窗口不能保证完成后的状态不再变化；E10预算限制反复恢复，同时可能终止原本最终能完成的回合。完整M4/M5状态不变。
