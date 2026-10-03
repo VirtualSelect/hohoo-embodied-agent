@@ -15,3 +15,6 @@ evidence/exit-release-budget-20261003/** text eol=lf
 
 experiments/vl01_completion_lifecycle/** text eol=lf
 evidence/completion-lifecycle-20261003/** -text
+
+experiments/vl01_abort_exit/** text eol=lf
+evidence/abort-exit-*/** -text

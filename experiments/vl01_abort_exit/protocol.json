@@ -1,0 +1,23 @@
+{
+  "id": "E12-v1",
+  "dt_s": 0.002,
+  "horizon_s": 12,
+  "conditions": [
+    "clean",
+    "repeated-gap",
+    "permanent-gap",
+    "lower-silence"
+  ],
+  "policies": [
+    "hold",
+    "open",
+    "open-retreat"
+  ],
+  "budget": 2,
+  "cooldown_ticks": 200,
+  "deadline_ticks": 400,
+  "monitor": "E10 transfer-only BudgetGate; same absolute-time sensor gaps",
+  "exit": "Apply on next tick after terminal abort. Open grip0. Retreat +100mm after200ms over600ms smoothstep. No regrasp/restart.",
+  "truth": "Original scene placement contract over final500ms; record final contacts/height. No claim that an exit is safe.",
+  "design": "12 deterministic physical rollouts, one per cell; before-abort policy prefixes must agree. lower-silence is an out-of-phase negative coverage control. No randomized success rate, no hardware."
+}
