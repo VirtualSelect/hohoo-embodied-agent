@@ -7,3 +7,8 @@
 /experiments/vl01_phase_contracts/** text eol=lf
 /evidence/phase-contracts-20261001/** text eol=lf
 /evidence/phase-contracts-20261001/**/*.png binary
+
+experiments/vl01_exit_release_budget/** text eol=lf
+evidence/exit-release-budget-20261003/** text eol=lf
+*.gz binary
+*.png binary

@@ -1,0 +1,95 @@
+{
+  "id": "E8-E10-v1",
+  "dt_s": 0.002,
+  "capture_ticks": 10,
+  "horizon_s": 12.0,
+  "recovery": {
+    "confirm_ticks": 50,
+    "age_ticks": 30,
+    "deadline_ticks": 400,
+    "budget": 2,
+    "cooldown_ticks": 200
+  },
+  "release": {
+    "window_ticks": 125,
+    "xy": 0.045,
+    "z": 0.026,
+    "z_error": 0.006,
+    "speed": 0.02
+  },
+  "studies": {
+    "E8": {
+      "policies": [
+        "hold",
+        "open",
+        "open-retreat"
+      ],
+      "conditions": [
+        "clean",
+        "transfer-drop",
+        "lower-drop-early",
+        "lower-drop-late",
+        "lower-silence"
+      ]
+    },
+    "E9": {
+      "policies": [
+        "observe"
+      ],
+      "conditions": [
+        "clean",
+        "stuck-closed",
+        "delayed-open",
+        "false-good-report",
+        "post-release-push"
+      ]
+    },
+    "E10": {
+      "policies": [
+        "unlimited",
+        "budget-two",
+        "budget-two-cooldown"
+      ],
+      "conditions": [
+        "clean",
+        "single-gap",
+        "repeated-gap",
+        "permanent-gap"
+      ]
+    }
+  },
+  "faults": {
+    "transfer-drop": [
+      4.8,
+      5.04
+    ],
+    "lower-drop-early": [
+      5.6,
+      5.84
+    ],
+    "lower-drop-late": [
+      6.2,
+      6.44
+    ],
+    "lower-silence": [
+      5.6,
+      5.84
+    ],
+    "single-gap": [
+      4.6,
+      4.84
+    ],
+    "repeated-gap": "4.3<=t<6.94; first140ms of each440ms period",
+    "permanent-gap": [
+      4.3,
+      12.0
+    ],
+    "post-release-push": "cube external force +x 1N during8.0<=t<8.08; no teleport",
+    "false-good-report": "grip stuck closed after6.5; one forged settled/no-finger packet at6.602"
+  },
+  "exit": "Same E7 phase-aware stop predicate. Apply held target next tick. open sets grip0; open-retreat opens then after200ms raises target100mm over600ms smoothstep. These are candidate exit actions, not certified safe stops.",
+  "release_contract": "Observe only, no policy feedback. Single passing fresh capture vs consecutive fresh20ms captures spanning>=250ms, after commanded release and prior lift>100mm; support bin_floor, no fingers, XY/Z and speed. Success latches; final truth checked independently.",
+  "recovery_contract": "Reuse E5 fresh post-hold100ms gate; monitor transfer. Resume replan from measured hand over500ms then original lower/release/retreat. Cap2 vs cap2+400ms min hold; 800ms hold deadline wins. All gaps tied to absolute simulation time, policy exposure can differ.",
+  "design": "32 deterministic physical rollouts, one per cell. E9 applies two observational completion rules to the same five trajectories. No randomized success-rate inference, no robot hardware/vision/ROS2.",
+  "seed": null
+}
