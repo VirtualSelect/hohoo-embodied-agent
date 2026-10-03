@@ -2,7 +2,7 @@
 
 以仿真优先（Simulation First）的方式，从 AI 应用开发逐步走向机器人软件、数据与具身智能。
 
-**当前状态：已完成五轮 MuJoCo 教学对照，覆盖拾取偏移、抓取门控、搬运监测、观测新鲜度与恢复门控。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
+**当前状态：已完成十二轮 MuJoCo 教学对照，从拾取偏移、观测契约推进到完成状态与终止后的退出动作。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
 
 - [学习之旅](https://huhohoo.com/journey)
 - [虚拟具身实验室](https://huhohoo.com/journey/virtual-lab)
@@ -91,3 +91,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 2026-10-03 / E8–E10
 
 [退出动作、释放验收与恢复预算](experiments/vl01_exit_release_budget/README.md)完成32回合，保留96份压缩控制/物理状态/摘要文件与独立审计。E8晚下降松爪消除残留接触，但搬运掉落仍失败；E9持续窗口不能保证完成后的状态不再变化；E10预算限制反复恢复，同时可能终止原本最终能完成的回合。完整M4/M5状态不变。
+
+## 恢复终止后的退出动作
+
+[第十二轮：终止与退出分离](experiments/vl01_abort_exit/README.md)完成12个回合：保持、松爪、松爪后退均未挽回两组中断条件的放置。无故障/下降静默组完成放置，后者同时暴露 transfer-only 监控覆盖边界。保留72,000行控制日志、7,200个可回放状态与三画面对照。退出不是安全认证。

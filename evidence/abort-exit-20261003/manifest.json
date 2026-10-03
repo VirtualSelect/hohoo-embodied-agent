@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-03T10:31:43.177040+00:00",
+  "commit": "f3a652a8a5ef3293ff07aae03c1dd88670f182be",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "mujoco": "3.3.7",
+  "protocol": {
+    "id": "E12-v1",
+    "dt_s": 0.002,
+    "horizon_s": 12,
+    "conditions": [
+      "clean",
+      "repeated-gap",
+      "permanent-gap",
+      "lower-silence"
+    ],
+    "policies": [
+      "hold",
+      "open",
+      "open-retreat"
+    ],
+    "budget": 2,
+    "cooldown_ticks": 200,
+    "deadline_ticks": 400,
+    "monitor": "E10 transfer-only BudgetGate; same absolute-time sensor gaps",
+    "exit": "Apply on next tick after terminal abort. Open grip0. Retreat +100mm after200ms over600ms smoothstep. No regrasp/restart.",
+    "truth": "Original scene placement contract over final500ms; record final contacts/height. No claim that an exit is safe.",
+    "design": "12 deterministic physical rollouts, one per cell; before-abort policy prefixes must agree. lower-silence is an out-of-phase negative coverage control. No randomized success rate, no hardware."
+  },
+  "sources": {
+    "experiments/vl01_abort_exit/audit.py": "9dcca3e2d9ae28007c8afac9dd869c1a263e0093899a58fda612457978fef635",
+    "experiments/vl01_abort_exit/exit_policy.py": "94c46e437efe5e2d9a63a7787b1682f2c30aa61781f6389ba007d4afdf91b28d",
+    "experiments/vl01_abort_exit/run.py": "67c7c8d593c80c6d09b9b84e4663ffae78870444782b3b5035499e9203e7a742",
+    "experiments/vl01_abort_exit/test_exit.py": "55d30f709431eef13176ae666e153e3dd48729aa9733154e0369ce4eb71379d9",
+    "experiments/vl01_abort_exit/protocol.json": "ceb6a06114071a35183c14250c441e8740a306072ddb65b775a1583e45f0ec4f",
+    "experiments/vl01_exit_release_budget/run.py": "0b11569eb4e7cc14e9144bbc802d935001eff56af0b1a498adca8cb7cec98bcd",
+    "experiments/vl01_exit_release_budget/contracts.py": "287f879eb146edc43fef0ad51ad12393e8af41248c62b1eddb38c2d9ae5f28f1",
+    "experiments/vl01_exit_release_budget/protocol.json": "284b6163a4788bfce6ea65d57ccd937b2d9c0746989714c64465ec60d0e097cc",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807",
+    "experiments/vl01_phase_contracts/monitor.py": "c66d5ae93327a587bc9a6d88e38ae38b44370dc52e51023ab2d15a2bef161d15",
+    "experiments/vl01_recovery_gate/gate.py": "9991a1dcaca42ac55c1fb8e2287b2a7eff8306ba61d2e958f5d17e997d482919"
+  }
+}

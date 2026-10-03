@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "rollouts": 12,
+  "raw_files": 36,
+  "prefix_pairs": 12,
+  "physics_rows": 72000,
+  "states": 7200,
+  "placement": 6
+}

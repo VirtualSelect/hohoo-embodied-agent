@@ -1,0 +1,13 @@
+{
+  "condition": "lower-silence",
+  "policy": "hold",
+  "placement": true,
+  "warnings": {},
+  "abort_tick": null,
+  "state": "running",
+  "resumes": 0,
+  "final_cube_z": 0.025980039715365624,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": []
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "condition": "clean",
+    "policy": "hold",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "clean",
+    "policy": "open",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "clean",
+    "policy": "open-retreat",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "repeated-gap",
+    "policy": "hold",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 2711,
+    "state": "aborted",
+    "resumes": 2,
+    "final_cube_z": 0.16499966314014414,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2171,
+        "reason": "stale"
+      },
+      {
+        "type": "resume",
+        "tick": 2371,
+        "reason": "post_hold_window",
+        "capture_tick": 2361,
+        "age_ticks": 10,
+        "good": true,
+        "window_start": 2221,
+        "window_end": 2361
+      },
+      {
+        "type": "hold",
+        "tick": 2391,
+        "reason": "stale"
+      },
+      {
+        "type": "resume",
+        "tick": 2591,
+        "reason": "post_hold_window",
+        "capture_tick": 2581,
+        "age_ticks": 10,
+        "good": true,
+        "window_start": 2441,
+        "window_end": 2581
+      },
+      {
+        "type": "hold",
+        "tick": 2611,
+        "reason": "stale"
+      },
+      {
+        "type": "abort",
+        "tick": 2711,
+        "reason": "budget"
+      }
+    ]
+  },
+  {
+    "condition": "repeated-gap",
+    "policy": "open",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 2711,
+    "state": "aborted",
+    "resumes": 2,
+    "final_cube_z": 0.01999001985768281,
+    "final_contacts": "floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2171,
+        "reason": "stale"
+      },
+      {
+        "type": "resume",
+        "tick": 2371,
+        "reason": "post_hold_window",
+        "capture_tick": 2361,
+        "age_ticks": 10,
+        "good": true,
+        "window_start": 2221,
+        "window_end": 2361
+      },
+      {
+        "type": "hold",
+        "tick": 2391,
+        "reason": "stale"
+      },
+      {
+        "type": "resume",
+        "tick": 2591,
+        "reason": "post_hold_window",
+        "capture_tick": 2581,
+        "age_ticks": 10,
+        "good": true,
+        "window_start": 2441,
+        "window_end": 2581
+      },
+      {
+        "type": "hold",
+        "tick": 2611,
+        "reason": "stale"
+      },
+      {
+        "type": "abort",
+        "tick": 2711,
+        "reason": "budget"
+      }
+    ]
+  },
+  {
+    "condition": "repeated-gap",
+    "policy": "open-retreat",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 2711,
+    "state": "aborted",
+    "resumes": 2,
+    "final_cube_z": 0.01999001985768281,
+    "final_contacts": "floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2171,
+        "reason": "stale"
+      },
+      {
+        "type": "resume",
+        "tick": 2371,
+        "reason": "post_hold_window",
+        "capture_tick": 2361,
+        "age_ticks": 10,
+        "good": true,
+        "window_start": 2221,
+        "window_end": 2361
+      },
+      {
+        "type": "hold",
+        "tick": 2391,
+        "reason": "stale"
+      },
+      {
+        "type": "resume",
+        "tick": 2591,
+        "reason": "post_hold_window",
+        "capture_tick": 2581,
+        "age_ticks": 10,
+        "good": true,
+        "window_start": 2441,
+        "window_end": 2581
+      },
+      {
+        "type": "hold",
+        "tick": 2611,
+        "reason": "stale"
+      },
+      {
+        "type": "abort",
+        "tick": 2711,
+        "reason": "budget"
+      }
+    ]
+  },
+  {
+    "condition": "permanent-gap",
+    "policy": "hold",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 2571,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.16547680875792609,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2171,
+        "reason": "stale"
+      },
+      {
+        "type": "abort",
+        "tick": 2571,
+        "reason": "revalidation_deadline"
+      }
+    ]
+  },
+  {
+    "condition": "permanent-gap",
+    "policy": "open",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 2571,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.019990019857682843,
+    "final_contacts": "floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2171,
+        "reason": "stale"
+      },
+      {
+        "type": "abort",
+        "tick": 2571,
+        "reason": "revalidation_deadline"
+      }
+    ]
+  },
+  {
+    "condition": "permanent-gap",
+    "policy": "open-retreat",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 2571,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.019990019857682843,
+    "final_contacts": "floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2171,
+        "reason": "stale"
+      },
+      {
+        "type": "abort",
+        "tick": 2571,
+        "reason": "revalidation_deadline"
+      }
+    ]
+  },
+  {
+    "condition": "lower-silence",
+    "policy": "hold",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-silence",
+    "policy": "open",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-silence",
+    "policy": "open-retreat",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  }
+]
