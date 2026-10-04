@@ -1,0 +1,31 @@
+{
+  "condition": "transfer-gap",
+  "policy": "phase-aware",
+  "placement": true,
+  "warnings": {},
+  "abort_tick": null,
+  "state": "running",
+  "resumes": 1,
+  "final_cube_z": 0.025980039715365645,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2321,
+      "reason": "stale",
+      "interrupted_phase": "transfer"
+    },
+    {
+      "type": "resume",
+      "tick": 2521,
+      "reason": "post_hold_window",
+      "capture_tick": 2521,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2421,
+      "window_end": 2521,
+      "interrupted_phase": "transfer"
+    }
+  ]
+}

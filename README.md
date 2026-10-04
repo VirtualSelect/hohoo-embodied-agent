@@ -95,3 +95,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 恢复终止后的退出动作
 
 [第十二轮：终止与退出分离](experiments/vl01_abort_exit/README.md)完成12个回合：保持、松爪、松爪后退均未挽回两组中断条件的放置。无故障/下降静默组完成放置，后者同时暴露 transfer-only 监控覆盖边界。保留72,000行控制日志、7,200个可回放状态与三画面对照。退出不是安全认证。
+
+## 阶段恢复组合
+
+[第十三轮：下降阶段恢复](experiments/vl01_phase_recovery/README.md)：18回合、108,000行控制记录、10,800个回放状态。阶段感知规则避免无故障下降误停；保留永久观测丢失和终止后偶然落入盒内的案例。完整VL01仍待完成。

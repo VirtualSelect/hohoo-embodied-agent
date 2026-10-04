@@ -1,0 +1,446 @@
+[
+  {
+    "condition": "clean",
+    "policy": "transfer-only",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "clean",
+    "policy": "reuse-transfer",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3401,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.09505663859327719,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 3001,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3401,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "clean",
+    "policy": "phase-aware",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "transfer-gap",
+    "policy": "transfer-only",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 1,
+    "final_cube_z": 0.025980039715365645,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2321,
+        "reason": "stale",
+        "interrupted_phase": "transfer"
+      },
+      {
+        "type": "resume",
+        "tick": 2521,
+        "reason": "post_hold_window",
+        "capture_tick": 2521,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 2421,
+        "window_end": 2521,
+        "interrupted_phase": "transfer"
+      }
+    ]
+  },
+  {
+    "condition": "transfer-gap",
+    "policy": "reuse-transfer",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3421,
+    "state": "aborted",
+    "resumes": 1,
+    "final_cube_z": 0.09547725719065932,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2321,
+        "reason": "stale",
+        "interrupted_phase": "transfer"
+      },
+      {
+        "type": "resume",
+        "tick": 2521,
+        "reason": "post_hold_window",
+        "capture_tick": 2521,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 2421,
+        "window_end": 2521,
+        "interrupted_phase": "transfer"
+      },
+      {
+        "type": "hold",
+        "tick": 3021,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3421,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "transfer-gap",
+    "policy": "phase-aware",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 1,
+    "final_cube_z": 0.025980039715365645,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2321,
+        "reason": "stale",
+        "interrupted_phase": "transfer"
+      },
+      {
+        "type": "resume",
+        "tick": 2521,
+        "reason": "post_hold_window",
+        "capture_tick": 2521,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 2421,
+        "window_end": 2521,
+        "interrupted_phase": "transfer"
+      }
+    ]
+  },
+  {
+    "condition": "lower-gap",
+    "policy": "transfer-only",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-gap",
+    "policy": "reuse-transfer",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3561,
+    "state": "aborted",
+    "resumes": 1,
+    "final_cube_z": 0.07968967350823392,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "resume",
+        "tick": 3021,
+        "reason": "post_hold_window",
+        "capture_tick": 3021,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 2921,
+        "window_end": 3021,
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "hold",
+        "tick": 3161,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3561,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-gap",
+    "policy": "phase-aware",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 1,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "resume",
+        "tick": 3021,
+        "reason": "post_hold_window",
+        "capture_tick": 3021,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 2921,
+        "window_end": 3021,
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-late-gap",
+    "policy": "transfer-only",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-late-gap",
+    "policy": "reuse-transfer",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3401,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.09505663859327719,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 3001,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3401,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-late-gap",
+    "policy": "phase-aware",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 1,
+    "final_cube_z": 0.025980039715365607,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 3071,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "resume",
+        "tick": 3271,
+        "reason": "post_hold_window",
+        "capture_tick": 3271,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 3171,
+        "window_end": 3271,
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-permanent",
+    "policy": "transfer-only",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-permanent",
+    "policy": "reuse-transfer",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3221,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.1578096204273466,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3221,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-permanent",
+    "policy": "phase-aware",
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3221,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.1578096204273466,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3221,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-drop",
+    "policy": "transfer-only",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.02598003971536564,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-drop",
+    "policy": "reuse-transfer",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": 3221,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365607,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3221,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-drop",
+    "policy": "phase-aware",
+    "placement": true,
+    "warnings": {},
+    "abort_tick": 3221,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365607,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3221,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  }
+]

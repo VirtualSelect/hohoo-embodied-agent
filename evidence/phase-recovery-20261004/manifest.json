@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-04T11:27:26.099838+00:00",
+  "commit": "796860921e11c0d381cfec25691900d816ec6811",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "mujoco": "3.3.7",
+  "protocol": {
+    "id": "E13",
+    "date": "2026-10-04",
+    "dt_s": 0.002,
+    "horizon_s": 12,
+    "budget": 2,
+    "cooldown_ticks": 200,
+    "deadline_ticks": 400,
+    "conditions": [
+      "clean",
+      "transfer-gap",
+      "lower-gap",
+      "lower-late-gap",
+      "lower-permanent",
+      "lower-drop"
+    ],
+    "policies": [
+      "transfer-only",
+      "reuse-transfer",
+      "phase-aware"
+    ],
+    "faults": {
+      "transfer-gap": [
+        4.6,
+        4.84
+      ],
+      "lower-gap": [
+        5.6,
+        5.84
+      ],
+      "lower-late-gap": [
+        6.1,
+        6.34
+      ],
+      "lower-permanent": [
+        5.6,
+        12
+      ],
+      "lower-drop": [
+        5.6,
+        5.84
+      ]
+    },
+    "terminal_exit": "hold",
+    "resume": "0.5s measured gripper to interrupted stage destination; remaining nominal stages",
+    "success": "unchanged vl01_pick_place acceptance over last 0.5s",
+    "scope": "fixed simulation, no regrasp, no hardware claim"
+  },
+  "sources": {
+    "experiments/vl01_phase_recovery/audit.py": "00cbce3843689efe04bf9fba79778009c157db768476d4c5e5465805b800a230",
+    "experiments/vl01_phase_recovery/phase_gate.py": "4eef296a33436001e067212bce37d74202ca1afd911025bf68ef68ab54d91b36",
+    "experiments/vl01_phase_recovery/run.py": "8c76879cada02c718f09bd7bed13aeca94ecbad82ea552ad5e974b512d7a72eb",
+    "experiments/vl01_phase_recovery/test_gate.py": "337258ae8da0104e272f1ce885deb37df545fa388fd4dd57c7bc577e9c319675",
+    "experiments/vl01_phase_recovery/protocol.json": "2689451757343718de59848e5a5d6d50c01ca81c0e5dd2f7cf5de24a0fb7efa0",
+    "experiments/vl01_exit_release_budget/run.py": "0b11569eb4e7cc14e9144bbc802d935001eff56af0b1a498adca8cb7cec98bcd",
+    "experiments/vl01_exit_release_budget/contracts.py": "287f879eb146edc43fef0ad51ad12393e8af41248c62b1eddb38c2d9ae5f28f1",
+    "experiments/vl01_exit_release_budget/protocol.json": "284b6163a4788bfce6ea65d57ccd937b2d9c0746989714c64465ec60d0e097cc",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807",
+    "experiments/vl01_phase_contracts/monitor.py": "c66d5ae93327a587bc9a6d88e38ae38b44370dc52e51023ab2d15a2bef161d15",
+    "experiments/vl01_recovery_gate/gate.py": "9991a1dcaca42ac55c1fb8e2287b2a7eff8306ba61d2e958f5d17e997d482919"
+  }
+}

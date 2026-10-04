@@ -18,3 +18,6 @@ evidence/completion-lifecycle-20261003/** -text
 
 experiments/vl01_abort_exit/** text eol=lf
 evidence/abort-exit-*/** -text
+
+experiments/vl01_phase_recovery/** text eol=lf
+evidence/phase-recovery-*/** -text

@@ -1,0 +1,43 @@
+{
+  "condition": "lower-gap",
+  "policy": "reuse-transfer",
+  "placement": false,
+  "warnings": {},
+  "abort_tick": 3561,
+  "state": "aborted",
+  "resumes": 1,
+  "final_cube_z": 0.07968967350823392,
+  "final_contacts": "left_pad|right_pad",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2821,
+      "reason": "stale",
+      "interrupted_phase": "lower"
+    },
+    {
+      "type": "resume",
+      "tick": 3021,
+      "reason": "post_hold_window",
+      "capture_tick": 3021,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2921,
+      "window_end": 3021,
+      "interrupted_phase": "lower"
+    },
+    {
+      "type": "hold",
+      "tick": 3161,
+      "reason": "grasp",
+      "interrupted_phase": "lower"
+    },
+    {
+      "type": "abort",
+      "tick": 3561,
+      "reason": "revalidation_deadline",
+      "interrupted_phase": "lower"
+    }
+  ]
+}

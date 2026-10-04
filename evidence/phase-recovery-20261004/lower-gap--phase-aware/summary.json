@@ -1,0 +1,31 @@
+{
+  "condition": "lower-gap",
+  "policy": "phase-aware",
+  "placement": true,
+  "warnings": {},
+  "abort_tick": null,
+  "state": "running",
+  "resumes": 1,
+  "final_cube_z": 0.025980039715365624,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2821,
+      "reason": "stale",
+      "interrupted_phase": "lower"
+    },
+    {
+      "type": "resume",
+      "tick": 3021,
+      "reason": "post_hold_window",
+      "capture_tick": 3021,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2921,
+      "window_end": 3021,
+      "interrupted_phase": "lower"
+    }
+  ]
+}

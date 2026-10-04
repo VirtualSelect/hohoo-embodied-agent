@@ -1,0 +1,26 @@
+{
+  "condition": "lower-permanent",
+  "policy": "reuse-transfer",
+  "placement": false,
+  "warnings": {},
+  "abort_tick": 3221,
+  "state": "aborted",
+  "resumes": 0,
+  "final_cube_z": 0.1578096204273466,
+  "final_contacts": "left_pad|right_pad",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2821,
+      "reason": "stale",
+      "interrupted_phase": "lower"
+    },
+    {
+      "type": "abort",
+      "tick": 3221,
+      "reason": "revalidation_deadline",
+      "interrupted_phase": "lower"
+    }
+  ]
+}
