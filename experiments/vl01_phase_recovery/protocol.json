@@ -1,0 +1,48 @@
+{
+  "id": "E13",
+  "date": "2026-10-04",
+  "dt_s": 0.002,
+  "horizon_s": 12,
+  "budget": 2,
+  "cooldown_ticks": 200,
+  "deadline_ticks": 400,
+  "conditions": [
+    "clean",
+    "transfer-gap",
+    "lower-gap",
+    "lower-late-gap",
+    "lower-permanent",
+    "lower-drop"
+  ],
+  "policies": [
+    "transfer-only",
+    "reuse-transfer",
+    "phase-aware"
+  ],
+  "faults": {
+    "transfer-gap": [
+      4.6,
+      4.84
+    ],
+    "lower-gap": [
+      5.6,
+      5.84
+    ],
+    "lower-late-gap": [
+      6.1,
+      6.34
+    ],
+    "lower-permanent": [
+      5.6,
+      12
+    ],
+    "lower-drop": [
+      5.6,
+      5.84
+    ]
+  },
+  "terminal_exit": "hold",
+  "resume": "0.5s measured gripper to interrupted stage destination; remaining nominal stages",
+  "success": "unchanged vl01_pick_place acceptance over last 0.5s",
+  "scope": "fixed simulation, no regrasp, no hardware claim"
+}
