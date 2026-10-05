@@ -99,3 +99,7 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 阶段恢复组合
 
 [第十三轮：下降阶段恢复](experiments/vl01_phase_recovery/README.md)：18回合、108,000行控制记录、10,800个回放状态。阶段感知规则避免无故障下降误停；保留永久观测丢失和终止后偶然落入盒内的案例。完整VL01仍待完成。
+
+## 恢复链完成资格
+
+[第十四轮：完成资格与当前有效性](experiments/vl01_qualified_completion)：8条真实MuJoCo轨迹，三个旁路读数。保留偶然放置、完成后失效、缺测与单条坏观测；完整VL01仍为学习中。

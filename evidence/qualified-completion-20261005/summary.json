@@ -1,0 +1,660 @@
+[
+  {
+    "condition": "clean",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "VALID",
+    "qualified": "VALID",
+    "physical_completed_at": 3551,
+    "qualified_completed_at": 3651,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 3421,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3551,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3514,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 3521,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3651,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "lower-gap",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "VALID",
+    "qualified": "VALID",
+    "physical_completed_at": 3571,
+    "qualified_completed_at": 3671,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 2821,
+        "from_state": "INVALID",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 2921,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 3441,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3571,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3535,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 3541,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3671,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 1,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "resume",
+        "tick": 3021,
+        "reason": "post_hold_window",
+        "capture_tick": 3021,
+        "age_ticks": 0,
+        "good": true,
+        "window_start": 2921,
+        "window_end": 3021,
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-drop",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "VALID",
+    "qualified": "ABORTED",
+    "physical_completed_at": 3051,
+    "qualified_completed_at": null,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 2921,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3051,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3221,
+        "from_state": "NOT_READY",
+        "to_state": "ABORTED",
+        "reason": "controller-terminal"
+      }
+    ],
+    "placement": true,
+    "warnings": {},
+    "abort_tick": 3221,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365607,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "grasp",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3221,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "lower-permanent",
+    "policy": "phase-aware",
+    "latched_physical": false,
+    "current_physical": "UNKNOWN",
+    "qualified": "ABORTED",
+    "physical_completed_at": null,
+    "qualified_completed_at": null,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 2821,
+        "from_state": "INVALID",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3221,
+        "from_state": "NOT_READY",
+        "to_state": "ABORTED",
+        "reason": "controller-terminal"
+      }
+    ],
+    "placement": false,
+    "warnings": {},
+    "abort_tick": 3221,
+    "state": "aborted",
+    "resumes": 0,
+    "final_cube_z": 0.1578096204273466,
+    "final_contacts": "left_pad|right_pad",
+    "max_cube_z": 0.1745031855496392,
+    "events": [
+      {
+        "type": "hold",
+        "tick": 2821,
+        "reason": "stale",
+        "interrupted_phase": "lower"
+      },
+      {
+        "type": "abort",
+        "tick": 3221,
+        "reason": "revalidation_deadline",
+        "interrupted_phase": "lower"
+      }
+    ]
+  },
+  {
+    "condition": "post-release-push",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "INVALID",
+    "qualified": "INVALID",
+    "physical_completed_at": 3551,
+    "qualified_completed_at": 3651,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 3421,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3551,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4011,
+        "from_state": "VALID",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3514,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 3521,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3651,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4011,
+        "from_state": "VALID",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      }
+    ],
+    "placement": false,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "post-release-silence",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "VALID",
+    "qualified": "VALID",
+    "physical_completed_at": 3551,
+    "qualified_completed_at": 3651,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 3421,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3551,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4021,
+        "from_state": "VALID",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 4201,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 4331,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3514,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 3521,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3651,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4021,
+        "from_state": "VALID",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 4201,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 4331,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "false-bad",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "VALID",
+    "qualified": "VALID",
+    "physical_completed_at": 3551,
+    "qualified_completed_at": 3651,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 3421,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3551,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4101,
+        "from_state": "VALID",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 4111,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 4241,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3514,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 3521,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3651,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4101,
+        "from_state": "VALID",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 4111,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 4241,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  },
+  {
+    "condition": "stale-replay",
+    "policy": "phase-aware",
+    "latched_physical": true,
+    "current_physical": "VALID",
+    "qualified": "VALID",
+    "physical_completed_at": 3551,
+    "qualified_completed_at": 3651,
+    "physical_events": [
+      {
+        "tick": 1731,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 1731,
+        "from_state": "UNKNOWN",
+        "to_state": "INVALID",
+        "reason": "fresh-violation"
+      },
+      {
+        "tick": 3421,
+        "from_state": "INVALID",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3551,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4021,
+        "from_state": "VALID",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 4201,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 4331,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "qualified_events": [
+      {
+        "tick": 3514,
+        "from_state": "NOT_READY",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 3521,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 3651,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      },
+      {
+        "tick": 4021,
+        "from_state": "VALID",
+        "to_state": "UNKNOWN",
+        "reason": "no-fresh-evidence"
+      },
+      {
+        "tick": 4201,
+        "from_state": "UNKNOWN",
+        "to_state": "VERIFYING",
+        "reason": "collecting-evidence"
+      },
+      {
+        "tick": 4331,
+        "from_state": "VERIFYING",
+        "to_state": "VALID",
+        "reason": "sustained-evidence"
+      }
+    ],
+    "placement": true,
+    "warnings": {},
+    "abort_tick": null,
+    "state": "running",
+    "resumes": 0,
+    "final_cube_z": 0.025980039715365624,
+    "final_contacts": "bin_floor",
+    "max_cube_z": 0.1745031855496392,
+    "events": []
+  }
+]

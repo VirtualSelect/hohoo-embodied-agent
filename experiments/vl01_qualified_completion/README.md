@@ -7,3 +7,9 @@
 `python experiments/vl01_qualified_completion/audit.py evidence/qualified-completion-your-run`
 
 release intent 是控制指令，不是硬件执行确认。ABORTED 为终态；物理落入盒子不能反向恢复执行资格。瞬时坏观测仍会撤销当前有效性，未解决感知噪声或真机安全问题。完整 VL01、M4/M5 未完成。
+
+## 2026-10-05 实测归档
+
+8回合、48,000行控制记录、4,800状态；下降松爪物理通过但执行已终止，推动后历史完成仍在而当前有效性失效。
+
+[配套文章](https://huhohoo.com/docs/embodied-ai/mujoco-qualified-completion)。图表脚本为 plot.py；原始记录和独立审计见 evidence 目录。

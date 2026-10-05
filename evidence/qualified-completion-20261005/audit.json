@@ -1,0 +1,88 @@
+{
+  "rollouts": 8,
+  "observer_readouts": 24,
+  "control_rows": 48000,
+  "replay_states": 4800,
+  "findings": [
+    {
+      "condition": "clean",
+      "placement": true,
+      "state": "running",
+      "latched_physical": true,
+      "current_physical": "VALID",
+      "qualified": "VALID",
+      "physical_completed_at": 3551,
+      "qualified_completed_at": 3651
+    },
+    {
+      "condition": "lower-gap",
+      "placement": true,
+      "state": "running",
+      "latched_physical": true,
+      "current_physical": "VALID",
+      "qualified": "VALID",
+      "physical_completed_at": 3571,
+      "qualified_completed_at": 3671
+    },
+    {
+      "condition": "lower-drop",
+      "placement": true,
+      "state": "aborted",
+      "latched_physical": true,
+      "current_physical": "VALID",
+      "qualified": "ABORTED",
+      "physical_completed_at": 3051,
+      "qualified_completed_at": null
+    },
+    {
+      "condition": "lower-permanent",
+      "placement": false,
+      "state": "aborted",
+      "latched_physical": false,
+      "current_physical": "UNKNOWN",
+      "qualified": "ABORTED",
+      "physical_completed_at": null,
+      "qualified_completed_at": null
+    },
+    {
+      "condition": "post-release-push",
+      "placement": false,
+      "state": "running",
+      "latched_physical": true,
+      "current_physical": "INVALID",
+      "qualified": "INVALID",
+      "physical_completed_at": 3551,
+      "qualified_completed_at": 3651
+    },
+    {
+      "condition": "post-release-silence",
+      "placement": true,
+      "state": "running",
+      "latched_physical": true,
+      "current_physical": "VALID",
+      "qualified": "VALID",
+      "physical_completed_at": 3551,
+      "qualified_completed_at": 3651
+    },
+    {
+      "condition": "false-bad",
+      "placement": true,
+      "state": "running",
+      "latched_physical": true,
+      "current_physical": "VALID",
+      "qualified": "VALID",
+      "physical_completed_at": 3551,
+      "qualified_completed_at": 3651
+    },
+    {
+      "condition": "stale-replay",
+      "placement": true,
+      "state": "running",
+      "latched_physical": true,
+      "current_physical": "VALID",
+      "qualified": "VALID",
+      "physical_completed_at": 3551,
+      "qualified_completed_at": 3651
+    }
+  ]
+}

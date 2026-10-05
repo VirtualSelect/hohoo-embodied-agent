@@ -1,0 +1,94 @@
+{
+  "condition": "lower-gap",
+  "policy": "phase-aware",
+  "latched_physical": true,
+  "current_physical": "VALID",
+  "qualified": "VALID",
+  "physical_completed_at": 3571,
+  "qualified_completed_at": 3671,
+  "physical_events": [
+    {
+      "tick": 1731,
+      "from_state": "NOT_READY",
+      "to_state": "UNKNOWN",
+      "reason": "no-fresh-evidence"
+    },
+    {
+      "tick": 1731,
+      "from_state": "UNKNOWN",
+      "to_state": "INVALID",
+      "reason": "fresh-violation"
+    },
+    {
+      "tick": 2821,
+      "from_state": "INVALID",
+      "to_state": "UNKNOWN",
+      "reason": "no-fresh-evidence"
+    },
+    {
+      "tick": 2921,
+      "from_state": "UNKNOWN",
+      "to_state": "INVALID",
+      "reason": "fresh-violation"
+    },
+    {
+      "tick": 3441,
+      "from_state": "INVALID",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 3571,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    }
+  ],
+  "qualified_events": [
+    {
+      "tick": 3535,
+      "from_state": "NOT_READY",
+      "to_state": "UNKNOWN",
+      "reason": "no-fresh-evidence"
+    },
+    {
+      "tick": 3541,
+      "from_state": "UNKNOWN",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 3671,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    }
+  ],
+  "placement": true,
+  "warnings": {},
+  "abort_tick": null,
+  "state": "running",
+  "resumes": 1,
+  "final_cube_z": 0.025980039715365624,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": [
+    {
+      "type": "hold",
+      "tick": 2821,
+      "reason": "stale",
+      "interrupted_phase": "lower"
+    },
+    {
+      "type": "resume",
+      "tick": 3021,
+      "reason": "post_hold_window",
+      "capture_tick": 3021,
+      "age_ticks": 0,
+      "good": true,
+      "window_start": 2921,
+      "window_end": 3021,
+      "interrupted_phase": "lower"
+    }
+  ]
+}

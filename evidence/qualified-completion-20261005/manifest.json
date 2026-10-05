@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-05T07:50:09.788914+00:00",
+  "commit": "8dfddeb71f0d083e6175852b778a3dfa17953feb",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "mujoco": "3.3.7",
+  "protocol": {
+    "id": "E14",
+    "dt_s": 0.002,
+    "horizon_s": 12,
+    "conditions": [
+      "clean",
+      "lower-gap",
+      "lower-drop",
+      "lower-permanent",
+      "post-release-push",
+      "post-release-silence",
+      "false-bad",
+      "stale-replay"
+    ],
+    "observers": [
+      "latched-physical",
+      "current-physical",
+      "qualified"
+    ],
+    "budget": 2,
+    "cooldown_ticks": 200,
+    "span_ticks": 125,
+    "cadence_ticks": 10,
+    "age_ticks": 30,
+    "faults": {
+      "lower-gap": [
+        5.6,
+        5.84
+      ],
+      "lower-drop": [
+        5.6,
+        5.84
+      ],
+      "lower-permanent": [
+        5.6,
+        12
+      ],
+      "post-release-push": [
+        8,
+        8.08
+      ],
+      "post-release-silence": [
+        8,
+        8.4
+      ],
+      "stale-replay": [
+        8,
+        8.4
+      ]
+    },
+    "false_bad_tick": 4101,
+    "push_x_n": 1,
+    "release_rule": "running + actual scheduled release + commanded grip < 0.005; intent only, not hardware acknowledgement",
+    "scope": "8 physical rollouts, 3 passive readouts each, not 24 trials. Fixed scene, no hardware safety conclusion."
+  },
+  "sources": {
+    "experiments/vl01_qualified_completion/audit.py": "70b37d073ce98569e749810afa712861cefbfa1bda4dbef9469165d051452c4d",
+    "experiments/vl01_qualified_completion/completion.py": "90e1f1b454503d38db774a16dadbbcf5d69efdb5c63c36120b046ec4988acaae",
+    "experiments/vl01_qualified_completion/run.py": "a3c38756db8e1e18d3faa67b4af2924b690676ba3182efd9d10052f2402621c5",
+    "experiments/vl01_qualified_completion/test_completion.py": "9930c7afa5057213c569109d414fe7f3bd5ebb266d0eeb3b9c4e0dd71bbd00e5",
+    "experiments/vl01_qualified_completion/protocol.json": "823093df94e7f8699fc1982a27ce8fda9ffdb378d0c8856d1e089e7686111c72",
+    "experiments/vl01_phase_recovery/run.py": "8c76879cada02c718f09bd7bed13aeca94ecbad82ea552ad5e974b512d7a72eb",
+    "experiments/vl01_phase_recovery/phase_gate.py": "4eef296a33436001e067212bce37d74202ca1afd911025bf68ef68ab54d91b36",
+    "experiments/vl01_phase_recovery/protocol.json": "2689451757343718de59848e5a5d6d50c01ca81c0e5dd2f7cf5de24a0fb7efa0",
+    "experiments/vl01_exit_release_budget/run.py": "0b11569eb4e7cc14e9144bbc802d935001eff56af0b1a498adca8cb7cec98bcd",
+    "experiments/vl01_exit_release_budget/contracts.py": "287f879eb146edc43fef0ad51ad12393e8af41248c62b1eddb38c2d9ae5f28f1",
+    "experiments/vl01_exit_release_budget/protocol.json": "284b6163a4788bfce6ea65d57ccd937b2d9c0746989714c64465ec60d0e097cc",
+    "experiments/vl01_pick_place/run.py": "c1f4079697d87fd81c23c0673b89f6f3641d019adf450a9d603d14523679fcc3",
+    "experiments/vl01_pick_place/protocol.json": "05f99d19e1e5ee18d45905c8fd67e660b314ad3820d05897dd3e26d7573b1588",
+    "experiments/vl01_pick_place/scene.xml": "0e55a4a11e77dd92a5d2ca98ec7338d33d0b21d83c670debb5d918dc1da52807",
+    "experiments/vl01_phase_contracts/monitor.py": "c66d5ae93327a587bc9a6d88e38ae38b44370dc52e51023ab2d15a2bef161d15",
+    "experiments/vl01_recovery_gate/gate.py": "9991a1dcaca42ac55c1fb8e2287b2a7eff8306ba61d2e958f5d17e997d482919",
+    "experiments/vl01_completion_lifecycle/lifecycle.py": "7625ecc90d2d304963d5083abecfcd4698350cb50a0ab780c2f9cc23ab56e844"
+  }
+}

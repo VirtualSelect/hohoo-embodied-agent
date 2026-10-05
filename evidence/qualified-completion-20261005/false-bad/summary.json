@@ -1,0 +1,100 @@
+{
+  "condition": "false-bad",
+  "policy": "phase-aware",
+  "latched_physical": true,
+  "current_physical": "VALID",
+  "qualified": "VALID",
+  "physical_completed_at": 3551,
+  "qualified_completed_at": 3651,
+  "physical_events": [
+    {
+      "tick": 1731,
+      "from_state": "NOT_READY",
+      "to_state": "UNKNOWN",
+      "reason": "no-fresh-evidence"
+    },
+    {
+      "tick": 1731,
+      "from_state": "UNKNOWN",
+      "to_state": "INVALID",
+      "reason": "fresh-violation"
+    },
+    {
+      "tick": 3421,
+      "from_state": "INVALID",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 3551,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    },
+    {
+      "tick": 4101,
+      "from_state": "VALID",
+      "to_state": "INVALID",
+      "reason": "fresh-violation"
+    },
+    {
+      "tick": 4111,
+      "from_state": "INVALID",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 4241,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    }
+  ],
+  "qualified_events": [
+    {
+      "tick": 3514,
+      "from_state": "NOT_READY",
+      "to_state": "UNKNOWN",
+      "reason": "no-fresh-evidence"
+    },
+    {
+      "tick": 3521,
+      "from_state": "UNKNOWN",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 3651,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    },
+    {
+      "tick": 4101,
+      "from_state": "VALID",
+      "to_state": "INVALID",
+      "reason": "fresh-violation"
+    },
+    {
+      "tick": 4111,
+      "from_state": "INVALID",
+      "to_state": "VERIFYING",
+      "reason": "collecting-evidence"
+    },
+    {
+      "tick": 4241,
+      "from_state": "VERIFYING",
+      "to_state": "VALID",
+      "reason": "sustained-evidence"
+    }
+  ],
+  "placement": true,
+  "warnings": {},
+  "abort_tick": null,
+  "state": "running",
+  "resumes": 0,
+  "final_cube_z": 0.025980039715365624,
+  "final_contacts": "bin_floor",
+  "max_cube_z": 0.1745031855496392,
+  "events": []
+}
