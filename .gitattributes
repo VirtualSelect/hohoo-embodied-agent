@@ -21,3 +21,6 @@ evidence/abort-exit-*/** -text
 
 experiments/vl01_phase_recovery/** text eol=lf
 evidence/phase-recovery-*/** -text
+
+experiments/vl01_qualified_completion/** text eol=lf
+evidence/qualified-completion-*/** -text

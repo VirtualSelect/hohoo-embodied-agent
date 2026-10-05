@@ -1,0 +1,55 @@
+{
+  "id": "E14",
+  "dt_s": 0.002,
+  "horizon_s": 12,
+  "conditions": [
+    "clean",
+    "lower-gap",
+    "lower-drop",
+    "lower-permanent",
+    "post-release-push",
+    "post-release-silence",
+    "false-bad",
+    "stale-replay"
+  ],
+  "observers": [
+    "latched-physical",
+    "current-physical",
+    "qualified"
+  ],
+  "budget": 2,
+  "cooldown_ticks": 200,
+  "span_ticks": 125,
+  "cadence_ticks": 10,
+  "age_ticks": 30,
+  "faults": {
+    "lower-gap": [
+      5.6,
+      5.84
+    ],
+    "lower-drop": [
+      5.6,
+      5.84
+    ],
+    "lower-permanent": [
+      5.6,
+      12
+    ],
+    "post-release-push": [
+      8,
+      8.08
+    ],
+    "post-release-silence": [
+      8,
+      8.4
+    ],
+    "stale-replay": [
+      8,
+      8.4
+    ]
+  },
+  "false_bad_tick": 4101,
+  "push_x_n": 1,
+  "release_rule": "running + actual scheduled release + commanded grip < 0.005; intent only, not hardware acknowledgement",
+  "scope": "8 physical rollouts, 3 passive readouts each, not 24 trials. Fixed scene, no hardware safety conclusion."
+}
