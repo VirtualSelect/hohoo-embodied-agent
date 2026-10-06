@@ -35,4 +35,18 @@ class Tests(unittest.TestCase):
     def test_contact_and_speed_boundaries(self):
         for key,val in [('contacts','bin_floor|left_pad'),('speed',-.1),('speed',.02),('x',.3)]:
             c=self.ready();c.update(141,True,True,{**good(141),key:val});self.assertEqual(c.state,'INVALID')
+    def test_continuous_delayed_observations_do_not_reset_window(self):
+        c=Completion()
+        for now in range(1,202):
+            capture=now-20
+            p=good(capture) if capture>=1 and (capture-1)%10==0 else None
+            c.update(now,True,True,p)
+        self.assertEqual(c.completed_at,151)
+        self.assertEqual(c.state,'VALID')
+    def test_delayed_stream_still_expires_after_silence(self):
+        c=Completion()
+        for cap in range(1,132,10):c.update(cap+20,True,True,good(cap))
+        c.update(161,True,True,None)
+        self.assertEqual(c.state,'UNKNOWN')
+        self.assertEqual(c.completed_at,151)
 if __name__=='__main__':unittest.main()

@@ -20,20 +20,23 @@ class Completion:
             self.events.append(dict(tick=now,from_state=self.state,to_state=state,reason=reason))
             self.state=state
 
+    def expire(self, now):
+        if self.last is None or now-self.last>=self.age:
+            self.start=None;self.transition('UNKNOWN',now,'no-fresh-evidence')
+
     def update(self, now, released, lifted, packet):
         if type(now) is not int or now<self.now:raise ValueError('monotonic time required')
         self.now=now
         if not released or not lifted:
             self.start=None;self.transition('NOT_READY',now,'prerequisite');return
-        if self.last is None or now-self.last>=self.age:
-            self.start=None;self.transition('UNKNOWN',now,'no-fresh-evidence')
-        if packet is None:return
+        # Accept a new capture before expiring the previous one at the same tick.
+        if packet is None:self.expire(now);return
         capture=packet.get('capture_tick')
         valid=(type(capture) is int and 0<=capture<=now and isinstance(packet.get('contacts'),str)
                and all(type(packet.get(k)) in (int,float) and math.isfinite(packet[k]) for k in ('x','y','z','speed')))
         if not valid:
             self.start=None;self.transition('UNKNOWN',now,'malformed');return
-        if self.last is not None and capture<=self.last:return
+        if self.last is not None and capture<=self.last:self.expire(now);return
         gap=self.last is None or capture-self.last>self.cadence
         self.last=capture
         if now-capture>=self.age:

@@ -23,4 +23,17 @@ class Contracts(unittest.TestCase):
  def test_reject_clock_backwards(self):
   c=Qualified();c.observe(3,False,False,None,True)
   with self.assertRaises(ValueError):c.observe(2,False,False,None,False)
+ def test_pre_release_capture_does_not_count(self):
+  c=Qualified();c.observe(100,True,True,packet(91),False)
+  for t in range(111,232,10):c.observe(t,True,True,packet(t-10),False)
+  self.assertIsNone(c.completed_at)
+  self.assertEqual(c.start,101)
+  c.observe(241,True,True,packet(231),False)
+  self.assertEqual(c.completed_at,241)
+ def test_each_release_starts_a_new_window(self):
+  c=Qualified();self.feed(c)
+  c.observe(150,False,True,None,False)
+  c.observe(160,True,True,packet(151),False)
+  self.assertIsNone(c.start)
+  self.assertEqual(c.release_tick,160)
 if __name__=='__main__':unittest.main()

@@ -34,7 +34,8 @@ def audit(out):
             released=(t-1)*.002>=6.5;lifted=high>.1
             if not released or not lifted:history=[];set_state('NOT_READY',t,'prerequisite')
             else:
-                if last is None or t-last>=30:history=[];set_state('UNKNOWN',t,'no-fresh-evidence')
+                fresh_new=packet is not None and (last is None or packet['capture_tick']>last) and 0<=t-packet['capture_tick']<30
+                if not fresh_new and (last is None or t-last>=30):history=[];set_state('UNKNOWN',t,'no-fresh-evidence')
                 if packet is not None:
                     capture=packet['capture_tick'];assert 0<=capture<=t
                     if last is None or capture>last:
