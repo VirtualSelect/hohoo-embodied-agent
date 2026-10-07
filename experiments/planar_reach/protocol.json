@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "dt": 0.002,
+  "control_period": 0.02,
+  "duration": 4,
+  "goal": [
+    0.6,
+    0
+  ],
+  "success": {
+    "last_seconds": 0.3,
+    "distance_m": 0.015,
+    "speed_m_s": 0.04
+  },
+  "force_axis_limit_N": 5,
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "families": {
+    "gain": {
+      "mass": [
+        1,
+        2
+      ],
+      "kd": [
+        0,
+        18,
+        36
+      ],
+      "kp": 80
+    },
+    "path": {
+      "wall_half_y": [
+        0.04,
+        0.09
+      ],
+      "route": [
+        "direct",
+        "corner",
+        "clearance"
+      ],
+      "kp": 80,
+      "kd": 18
+    },
+    "observation": {
+      "delay": [
+        0,
+        0.08
+      ],
+      "noise": [
+        0,
+        0.01
+      ],
+      "mode": [
+        "hold",
+        "predict"
+      ],
+      "kp": 80,
+      "kd": 18
+    }
+  },
+  "boundaries": "No robot arm, IK, grasping, vision, ROS2, learned policy or hardware safety. Predicted position uses simulator velocity; optimistic sensor assumption."
+}
