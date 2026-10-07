@@ -2,7 +2,7 @@
 
 以仿真优先（Simulation First）的方式，从 AI 应用开发逐步走向机器人软件、数据与具身智能。
 
-**当前状态：已完成十三轮 MuJoCo 教学对照，从拾取偏移、观测契约推进到阶段恢复、完成状态与终止后的退出动作。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
+**当前状态：已有抓取放置系列教学对照，从拾取偏移推进到阶段恢复与完成资格；另有二维力控第二场景，验证调参、绕障和延迟反馈。各轮保留独立原始证据；完整 Agent、ROS2 与训练路线尚未实现。**
 
 - [学习之旅](https://huhohoo.com/journey)
 - [虚拟具身实验室](https://huhohoo.com/journey/virtual-lab)
@@ -103,3 +103,13 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 ## 恢复链完成资格
 
 [第十四轮：完成资格与当前有效性](experiments/vl01_qualified_completion)：8条真实MuJoCo轨迹，三个旁路读数。保留偶然放置、完成后失效、缺测与单条坏观测；完整VL01仍为学习中。
+
+## 第二个场景 / 二维力控到达
+
+[planar_reach](experiments/planar_reach/README.md)：两个滑动关节由有界力驱动，不是机械臂运动学瞬移。36回合分别研究PD增益/质量、障碍净空、观测延迟/噪声，存档72,000行真实MuJoCo轨迹及三张图。
+
+- [协议](experiments/planar_reach/protocol.json)
+- [原始结果](evidence/planar-reach-20261007)
+- [从第一篇开始](https://huhohoo.com/docs/embodied-ai/mujoco-planar-pd)
+
+保留碰撞、超调和稳定窗口失败；没有用终点的一帧替代整段验收，不据此标记完整Agent、ROS2或VL01里程碑完成。
