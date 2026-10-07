@@ -24,3 +24,6 @@ evidence/phase-recovery-*/** -text
 
 experiments/vl01_qualified_completion/** text eol=lf
 evidence/qualified-completion-*/** -text
+
+/experiments/planar_reach/** text eol=lf
+/evidence/planar-reach-*/** -text
