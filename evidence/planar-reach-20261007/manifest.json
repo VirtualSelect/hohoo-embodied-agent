@@ -1,0 +1,118 @@
+{
+  "python": "3.12.14",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "commit": "f67d4d3bae9fa5171864513f1093e12ca6816a38",
+  "protocol": {
+    "version": 1,
+    "dt": 0.002,
+    "control_period": 0.02,
+    "duration": 4,
+    "goal": [
+      0.6,
+      0
+    ],
+    "success": {
+      "last_seconds": 0.3,
+      "distance_m": 0.015,
+      "speed_m_s": 0.04
+    },
+    "force_axis_limit_N": 5,
+    "seeds": [
+      7,
+      19,
+      41
+    ],
+    "families": {
+      "gain": {
+        "mass": [
+          1,
+          2
+        ],
+        "kd": [
+          0,
+          18,
+          36
+        ],
+        "kp": 80
+      },
+      "path": {
+        "wall_half_y": [
+          0.04,
+          0.09
+        ],
+        "route": [
+          "direct",
+          "corner",
+          "clearance"
+        ],
+        "kp": 80,
+        "kd": 18
+      },
+      "observation": {
+        "delay": [
+          0,
+          0.08
+        ],
+        "noise": [
+          0,
+          0.01
+        ],
+        "mode": [
+          "hold",
+          "predict"
+        ],
+        "kp": 80,
+        "kd": 18
+      }
+    },
+    "boundaries": "No robot arm, IK, grasping, vision, ROS2, learned policy or hardware safety. Predicted position uses simulator velocity; optimistic sensor assumption."
+  },
+  "sources": {
+    "experiments/planar_reach/audit.py": "2c4a34193ab18bcaf731c9b6b544f0a6678ca43371e193cb3bae7f3eefba691a",
+    "experiments/planar_reach/plot.py": "ae3c214925e44515f885922898f2e1da8b4cbd7a8f4df65d7adf1faa2fcea066",
+    "experiments/planar_reach/protocol.json": "3b3975084347818c17e192e5037b573f85450263219dde8c80759e13691335b8",
+    "experiments/planar_reach/run.py": "77ac393be1007a56a64efac427d5c754357d035311dc63622f08e45ba1025562",
+    "experiments/planar_reach/scene.xml": "9a9440dbdf7fcd50a00e7d4603e56ad6d215bdf85030d291c5be101a04cbff5e"
+  },
+  "files": {
+    "00-gain.csv": "d9ddcef7bed60225a2c97403ab6e1ddbb3de1c00e992d708689bc08c2f42473a",
+    "01-gain.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "02-gain.csv": "a514064cf2b597a5fb78f9382c90478f4d7f1ff0328d341ecefacb5eb5171280",
+    "03-gain.csv": "2cd4ff7760e6dbe9ae8c8340f9bb469e848d8e09a86733b137d764df8542c0b4",
+    "04-gain.csv": "8b546eeb7cdb38af86058ec6f76b08b5da9cadfd95e9425624805a1f96b0e900",
+    "05-gain.csv": "4fce1982b46a17d9715c133c8ae678e8a5235ec10e5eb81aa79231d86ca1eea5",
+    "06-path.csv": "3e9f375343095435be33e43d9dba9e2a1fa1c5847c445cef68555b315347b782",
+    "07-path.csv": "9490e412f09a1ae1565107c9e045a22ba9a7090c30b1a8b94defebdb80a5b9ef",
+    "08-path.csv": "527c5d770d109f09b6243ee7ab7a52731b28bfe4f1d115a09185db5132f189fa",
+    "09-path.csv": "3e9f375343095435be33e43d9dba9e2a1fa1c5847c445cef68555b315347b782",
+    "10-path.csv": "562b914b21209d980d1151d9a77fbd61ebd87c1c6bd6037d25aefe6bd4531f89",
+    "11-path.csv": "c5817c3bdd81809dccd3df09dedb98a15d41926d02715e8c44d1bcdaf098c5dd",
+    "12-observation.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "13-observation.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "14-observation.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "15-observation.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "16-observation.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "17-observation.csv": "2e4798a11ea1f71f31fdc5aed834827a87fa272f2d98abaafaec275bad97e6a0",
+    "18-observation.csv": "7408536946d6615d60ad3486de38402ce08a51aa8d7aef6aa590eb7eff996395",
+    "19-observation.csv": "a621c076ed98628b3b7c2a100b6d4eaf51f66fd490c72cba20f0dd4d7b04933a",
+    "20-observation.csv": "9d35361103a0d8abb2da067306d7b5bb91f3082483c2b20b6caddf13f25e0ec1",
+    "21-observation.csv": "7408536946d6615d60ad3486de38402ce08a51aa8d7aef6aa590eb7eff996395",
+    "22-observation.csv": "a621c076ed98628b3b7c2a100b6d4eaf51f66fd490c72cba20f0dd4d7b04933a",
+    "23-observation.csv": "9d35361103a0d8abb2da067306d7b5bb91f3082483c2b20b6caddf13f25e0ec1",
+    "24-observation.csv": "3aef6f1e05980436ee08a63498b6389e96610819f6d5e4e62642bea12ad54f35",
+    "25-observation.csv": "3aef6f1e05980436ee08a63498b6389e96610819f6d5e4e62642bea12ad54f35",
+    "26-observation.csv": "3aef6f1e05980436ee08a63498b6389e96610819f6d5e4e62642bea12ad54f35",
+    "27-observation.csv": "1e6655319cadb04dc2ce2794493f0dc7482967f8605a87fcd2f3d2d864fb978e",
+    "28-observation.csv": "1e6655319cadb04dc2ce2794493f0dc7482967f8605a87fcd2f3d2d864fb978e",
+    "29-observation.csv": "1e6655319cadb04dc2ce2794493f0dc7482967f8605a87fcd2f3d2d864fb978e",
+    "30-observation.csv": "6ef7019730077692f704d7b781fa1a9c1a82be80bb29af541fdfd1510c801e70",
+    "31-observation.csv": "feff8c2bf2bb45f86c43ac653279cc9734389860b25c5c4cd5090fe1d33a4e67",
+    "32-observation.csv": "64dfd594e383bcbcccd0eb46c2180ec2f49ca075789864f784854214b2780317",
+    "33-observation.csv": "888e2804b19042ffc78c4bf22583de32d74cac4c7bdd59055880bac1009499df",
+    "34-observation.csv": "9f45e125e8383c48ae5875d041eaf744cb2a6f439523543540504896b2f4f98b",
+    "35-observation.csv": "12d8d777acde19e7123f1ac12efb28b44cfcc89bfa7f8bafaa83e02f2bbb574c",
+    "results.json": "98ba9dd4c2b8ff7dd864f07b50e262e379125103fd16da65941b5ad7a79e2277"
+  }
+}
