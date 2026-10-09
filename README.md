@@ -113,3 +113,9 @@ A runnable MuJoCo Cartesian-gripper experiment is available in [experiments/vl01
 - [从第一篇开始](https://huhohoo.com/docs/embodied-ai/mujoco-planar-pd)
 
 保留碰撞、超调和稳定窗口失败；没有用终点的一帧替代整段验收，不据此标记完整Agent、ROS2或VL01里程碑完成。
+
+## 2026-10-09 / 位置观测下的速度估计
+
+[planar_velocity_estimation](experiments/planar_velocity_estimation/README.md)比较真值速度参考、位置差分和指数平滑：54个实际MuJoCo回合、108000行压缩轨迹，固定300ms逐步验收下13个通过。降低估计噪声不等于改善延迟闭环；保留失败，不调整阈值换取通过。
+
+固定证据提交：`1931effc42f9d5974f20c09614dc2ebbdfcbf44b`；[分享文章](https://huhohoo.com/docs/embodied-ai/mujoco-velocity-estimation)。全部在本地执行，不含真实硬件、机械臂或完整VL01认证。文章与代码由AI辅助整理，实验记录和独立审计可复核。下一项候选为采样率、平滑时间常数与控制增益的分离对照，尚未执行。
