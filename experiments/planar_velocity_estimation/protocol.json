@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "date": "2026-10-09",
+  "timestep": 0.002,
+  "control_period": 0.02,
+  "duration": 4,
+  "goal": [0.6,0],
+  "mass": 1,
+  "kp": 80,
+  "kd": 18,
+  "force_axis_limit_N": 5,
+  "delays": [0,0.08],
+  "position_noise_std_m": [0,0.003,0.01],
+  "estimators": ["oracle","difference","ema"],
+  "ema_tau_s": 0.06,
+  "seeds": [7,19,41],
+  "success": {"last_seconds":0.3,"distance_m":0.015,"speed_m_s":0.04},
+  "boundary": "MuJoCo planar 2-DOF force actuator, no obstacle, arm, vision, ROS2, learned policy or hardware. All modes hold delayed position. Oracle alone receives velocity captured at the sensor timestamp. No tuning after evidence inspection."
+}
