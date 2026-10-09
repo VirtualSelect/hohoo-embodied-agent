@@ -1,0 +1,113 @@
+{
+  "protocol": {
+    "version": 1,
+    "date": "2026-10-09",
+    "timestep": 0.002,
+    "control_period": 0.02,
+    "duration": 4,
+    "goal": [
+      0.6,
+      0
+    ],
+    "mass": 1,
+    "kp": 80,
+    "kd": 18,
+    "force_axis_limit_N": 5,
+    "delays": [
+      0,
+      0.08
+    ],
+    "position_noise_std_m": [
+      0,
+      0.003,
+      0.01
+    ],
+    "estimators": [
+      "oracle",
+      "difference",
+      "ema"
+    ],
+    "ema_tau_s": 0.06,
+    "seeds": [
+      7,
+      19,
+      41
+    ],
+    "success": {
+      "last_seconds": 0.3,
+      "distance_m": 0.015,
+      "speed_m_s": 0.04
+    },
+    "boundary": "MuJoCo planar 2-DOF force actuator, no obstacle, arm, vision, ROS2, learned policy or hardware. All modes hold delayed position. Oracle alone receives velocity captured at the sensor timestamp. No tuning after evidence inspection."
+  },
+  "source_commit": "35fcfc8a673140c054639e0e67bcba5c72d465dd",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "mujoco": "3.3.7",
+  "numpy": "2.2.6",
+  "sources": {
+    "audit.py": "ab80d8bb3c921709a12a63cd1d35b740d5b79cae8e2e847cad3078c4eac24033",
+    "estimator.py": "d3b2471e6df3531e800ce0fa979827dc4a0292968e79946537d908c230bd5ac7",
+    "protocol.json": "4d84726e18b6640ecaece0bcc227c0feb255c2a784f8b9f7cdd63efa6fb6cfa2",
+    "run.py": "cca781e3c2d93b2531b9ab43fcc6d5822d0ddd0c4c7446d73390b37f537f5962",
+    "scene.xml": "9a9440dbdf7fcd50a00e7d4603e56ad6d215bdf85030d291c5be101a04cbff5e",
+    "test_estimator.py": "182e11fbc1e1a148ec71df698f303ba4be654008c60ad40d391507e025a49bb4"
+  },
+  "files": {
+    "00.csv.gz": "912db4318e86ad207186ece63decf670323f7d53128386eeaeb719ab363b2329",
+    "01.csv.gz": "0808973216d29d17c2e0335a23d120609fdec9d0eef7ee8b2c256024988a9725",
+    "02.csv.gz": "d1e00610d6ec353f913f32974b20ab44591a60a6d1f18c4549e1999ed604098a",
+    "03.csv.gz": "e0b19d120a7553d092c890aae3ec5e5490db9bf25e26c74583e31f52153491b4",
+    "04.csv.gz": "81e4bf5ab730dbc027123fbadf4d68c0908e04076b7793a7a8342add7fc8fd89",
+    "05.csv.gz": "20fa5f5d65f4312f7ffb6ab5536c805ec22c6321d922bd40c5ad1b6fa348be01",
+    "06.csv.gz": "b5ea2ce515f85d249d0f1174d3872b4e762cf60f8889e0db74b5a1f4ce9b6675",
+    "07.csv.gz": "fc1f7fb118d79a70e43295777646304758557811aef4a8aae3c131afc2aecb1a",
+    "08.csv.gz": "998100de72b1429f2fdc91726ea545489840ac9a28c5783a01c924e62a4728c6",
+    "09.csv.gz": "b80b1a815d15ea1f8c74a9fb76a699ea20e32381d4812184571514fb2b65a0b6",
+    "10.csv.gz": "439492633f6079d68956f6c0312907ccf03117184bd69bb97e96fdc9e35d3465",
+    "11.csv.gz": "1589b2a107b4c8d9bd7f661fe3088e0d89c192d82b64d191c97cc18acccad0ef",
+    "12.csv.gz": "67e8b11226f92dbd113c1fc12206d957923546ca6781584aeb73af024aa07de6",
+    "13.csv.gz": "93214dbbfbe0f486cecd1d83054f86a9a89a588c423d5bc648942080ec812115",
+    "14.csv.gz": "a030369cd6f23cec792a3066a44ad38b753d1de0105b4514d781a633c255f5cb",
+    "15.csv.gz": "370aa8da35b94d55d08d2afc65fc284d47f1189db01a915103eddf83a06aac83",
+    "16.csv.gz": "bc8c375b6fa4991a779b44812d4548545c8914541ce00e4c54e59ea584936946",
+    "17.csv.gz": "ffa4756d7f30fc216120e946baf0bcb0f9426602e8575506949d37ddaaa30c9d",
+    "18.csv.gz": "a10496558aa96bc046f094c6963f9bc877b1c87ee351bf4377f67738160ca0f8",
+    "19.csv.gz": "c87ffb5c9ce6b3ecfca17ecff37acfe67a20700ca953f2e00dc6707acc53f08b",
+    "20.csv.gz": "1abc6723410299c880e1575f20191fc3a2f964917597d32464942ca89ae69dec",
+    "21.csv.gz": "3d27c41bb14974681524e2c2e8f08eb68bbce7117ec8919fddf902f6d56a92ee",
+    "22.csv.gz": "c0af21c6442c55f24886c202c34a89c378a6c8aeb229e38f9f4ec9a7900fdae7",
+    "23.csv.gz": "7d273f598dc22f6fd8b1eaf0599ef3c897cb2d9fb81095e18091a7969a0d539d",
+    "24.csv.gz": "7ea3c2d79e7c3ce8fc11dd36fea37ef3f3ba6e68eb6caa683ae9904ae2329d5b",
+    "25.csv.gz": "01ab6363d63dc8f171657986fae30847b19573e9d09a063a7c253d9327b68ba2",
+    "26.csv.gz": "5f08f6e31ed6ac95284b97b13b8f0fdf194dac1a9d3c3842bb6490efbd4527c8",
+    "27.csv.gz": "8063a38524a2620e92396706fb44ac559110e34e1b9e0aff0135d407621f1b96",
+    "28.csv.gz": "1b973fd460501d3b2604feb0e2c6655d463a69ea5cb7b5b51c59cf55efc0fa89",
+    "29.csv.gz": "fd55e3618bb5bf5f91f7dfec553345321ced221034e7fa5ba24a073518054b13",
+    "30.csv.gz": "172ea72428932a5307f5e7e8ad397324fc596719aa263d4b1cf7bfc5350502e0",
+    "31.csv.gz": "b2966367ad64eba7c790b881d34c79166cad55d511b46fcd2cd0b94b7622bb87",
+    "32.csv.gz": "b603984e3455d6715e4f20b6e71535a5cf7a5d41abed496a5b98518ed10fcb85",
+    "33.csv.gz": "6678d028ec51515f4b92c92650f0797a8c022d868318ad94d8faa76a7f248eb9",
+    "34.csv.gz": "60726ed133edde62a5230e9582444fbfe5e92e8592c74f3e6c7b43e952817ff6",
+    "35.csv.gz": "165eb7a4743318d43038bb00528d0c3cdcfef607f2009d939e1568c6c5aba0fa",
+    "36.csv.gz": "78464a30f5368abb817883a2b1da0f2f0575ce50e21b27ef7083b76c2b31a363",
+    "37.csv.gz": "a369523aaa38133bf5d427b99bfbb6e58b93fe7c25a07d3b6188e1181f5c8001",
+    "38.csv.gz": "0597ab02956c1284c04dbf04855db5c3f59f39475423dbdf3943bc341b022eef",
+    "39.csv.gz": "6053228045035130fde3a461e0c9d0b6be3b1d1fa1734a4b5dd4d875cae37af9",
+    "40.csv.gz": "a24bb75cacb47d7d57ee2e971f26ae285699093d4b70cca6ea5c56ab9f7e6736",
+    "41.csv.gz": "b27e67a53ee35eb84a765987d2382dfbb38780864ff138483b9baffbf4d844d0",
+    "42.csv.gz": "28b4f90211af04373f8b4dbb5a001999e67201da50f7434914c0fb7b13647913",
+    "43.csv.gz": "6594bd419d6b86fbfcb6532bff89c1f4ebac46c7b851a39166d786665dd21bed",
+    "44.csv.gz": "abf1c1c9bc34627c9f86ef3bed6b300067546f077d32984eb409d5ef41307ea8",
+    "45.csv.gz": "37c4b8934fd1ba804eb12a5ca8c08cffaff8d2eb2f00232742336885a067bf02",
+    "46.csv.gz": "7fd6607e3fe4442c1bfc2d2e22e72438f38126d03d279d05a39409aa58b0d0fd",
+    "47.csv.gz": "8915d5c8b49b99d98db8108f8048875af7514e445450a429c22f07452e8c30ae",
+    "48.csv.gz": "d51697b2b84e7ef9403033fa57525b96fddd901d82be7dae1e1877197c5a70c6",
+    "49.csv.gz": "2f38d22ae156f47654dca5d08546873cbe248f329f067d7b409f72cb32aa4dc9",
+    "50.csv.gz": "a683274f6e030ed6b5cb999b1b39cffb324762ce736d4a0b9bd724cd1bea6392",
+    "51.csv.gz": "94b9718a0549711e3bbaef1ed0faa54e26acfad05806cfdcd72caffb3943b2f1",
+    "52.csv.gz": "0bf9567ff33e50e509e4622cd2a4ba8be3311404176fba638618ed545b0cef80",
+    "53.csv.gz": "d01d22003208ea400c445c0fda9fea0508f52be64bf2772da5adb3d566785e15",
+    "results.json": "edbc8de28a895c95b85a6c859b6f4ca33c70208b8fd48b2f0829b672170f7289"
+  }
+}
